@@ -1,78 +1,88 @@
-# 🐶 Dog Wellness Tracker
+🐾 PAWS - Pet Activity & Wellness System
 
-A desktop application built in Java and JavaFX that allows dog owners to log, monitor, and analyze their pet’s daily health and behavior. This app helps identify patterns in your dog's well-being, detect potential issues early, and maintain detailed records over time — all in one place.
+A Java-based desktop application that allows pet owners to log, monitor, and analyze their pet’s daily wellbeing. PAWS helps identify trends in a pet’s health, highlight potential issues early, and maintain detailed records over time — all stored locally on the user’s machine.
 
----
+✨ Features
+Core Functionality (Must-Haves)
 
-## Features
+Pet Profiles: Create and manage one or more pet profiles (name, breed, age, weight, date of birth, etc.), saved with SQLite.
 
-### Core Functionality (Must-Haves)
-- **Multi-Dog Support:** Add and manage multiple dogs with their unique profiles.
-- **Daily Log Entries:** Track appetite, mood, symptoms, medications, and more.
-- **Calendar View:** Visualize logs over time with an intuitive calendar interface.
-- **Database Storage:** All entries are stored locally using SQLite.
-- **Pattern Detection:** Identify recurring symptoms or missed meals to flag potential health issues.
-- **Offline Use:** No internet connection required — all data stays on your machine.
+Daily Log Entries: Record daily wellbeing data such as mood, energy level, appetite, symptoms, notes, and custom tags.
 
-###  Bonus Features (Nice-to-Haves)
-- **CSV Export:** Export logs for vet visits or long-term storage.
-- **Trend Analysis:** Visual summaries of patterns (e.g. mood over time).
+Log Storage & Retrieval: All logs are stored in SQLite and retrieved per pet profile; prevents duplicate entries for the same day.
 
----
+View Past Logs: Review logs in a table or list format with sorting and filtering by date, mood, or energy level.
 
-## 🖼️ Screenshots (optional)
-*(Add some screenshots of the UI here to show off the interface)*
+CSV Export: Export selected logs to a CSV file with headers, formatted for easy sharing with a veterinarian.
 
----
+Pattern & Trend Analyzer: Detect recurring issues (e.g., low energy 3+ days, loss of appetite, repeated symptoms) and highlight potential health risks or conditions. Provides non-diagnostic suggestions to help owners decide if a vet visit may be needed.
 
-## 🧱 Tech Stack
+Basic JavaFX UI: Simple, clean interface for pet profiles, logging, log viewing, exporting, and navigation. Includes optional light/dark theme toggle.
 
-- **Java 17**
-- **JavaFX (UI)**
-- **SQLite (Local Database)**
-- **JDBC (Java-Database Connectivity)**
-- **MVC Architecture**
-- **Git/GitHub (Version Control)**
+Nice-to-Haves (Future Additions)
 
----
+Data Visualizations: Charts for mood and energy trends over time.
 
-## 🧠 Skills Demonstrated
+Multi-Day Summary: Weekly/monthly summaries showing averages and common tags.
 
-- Object-Oriented Programming (OOP)
-- GUI Design with JavaFX
-- Data Persistence using SQLite
-- MVC (Model-View-Controller) Pattern
-- File I/O for export features
-- Pattern recognition logic based on user-generated data
-- Clean code practices and modular class design
-- Git for source control and branching
+Advanced Search & Filters: Filter logs by keyword, date range, or symptom.
 
----
+Reminders & Notifications: Alerts for missed entries or daily reminders.
 
-## 🚶‍♂️ How It Works (User Walkthrough)
+Data Backup & Restore: Export/import the full database for backups.
 
-1. Launch the app.
-2. Create your dog's profile.
-3. Each day, log information like mood, appetite, symptoms, and medication.
-4. View entries over time in a calendar or list format.
-5. Receive alerts if patterns emerge (e.g. three consecutive days of poor appetite).
-6. Export logs if needed for vet consultations or analysis.
+Stretch Goals
 
----
+Login System (Local): Optional secure login with hashed passwords.
 
-## 🗂️ Folder Structure
+Multi-Language Support: Resource bundles to support multiple languages.
 
-```bash
-src/
-├── controller/
-│   └── LogEntryController.java
-│   └── DogProfileController.java
-├── model/
-│   └── LogEntry.java
-│   └── DogProfile.java
-├── view/
-│   └── main.fxml
-│   └── log_entry.fxml
-├── database/
-│   └── DatabaseManager.java
-└── Main.java
+Expanded Pet Support: Extend beyond dogs to include cats and other species.
+
+🧱 Tech Stack
+
+Java (main language)
+
+JavaFX (UI)
+
+SQLite (local database)
+
+JDBC (database connection)
+
+File I/O (CSV export)
+
+OOP design principles
+
+Git/GitHub (version control)
+
+🧠 Skills Demonstrated
+
+Object-Oriented Programming (OOP)
+
+GUI design with JavaFX
+
+Data persistence with SQLite
+
+Database integration with JDBC
+
+Pattern detection and basic data analysis
+
+File handling for CSV export and backups
+
+MVC-inspired design for organization
+
+Git for version control and collaboration
+
+🚶 How It Works (User Walkthrough)
+
+Launch the app.
+
+Create a pet profile with details like name, breed, age, and weight.
+
+Each day, log your pet’s mood, appetite, energy, and symptoms.
+
+View entries in a clean table or list with filtering and sorting.
+
+Get alerts if recurring patterns or potential risks are detected.
+
+Export logs to CSV to share with your veterinarian.
