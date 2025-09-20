@@ -2,6 +2,8 @@
 
 A desktop application built in **Java** and **JavaFX** that allows pet owners to log, monitor, and analyze their pet’s daily wellbeing. This app helps identify and graph patterns in your pet’s health, detect potential health risks early, and maintain detailed records over time — all on your machine.
 
+**[Detailed project overview »](https://docs.google.com/document/d/1JjbYGPes-9iQuyaDdFjE7aha5WyOLs5-SVndDCux4SE/edit?usp=sharing)**
+
 ---
 
 ## Features
@@ -32,7 +34,7 @@ A desktop application built in **Java** and **JavaFX** that allows pet owners to
 
 ---
 
-## 🧱 Tech Stack
+## Tech Stack
 
 - Java  
 - JavaFX (UI)  
@@ -44,7 +46,7 @@ A desktop application built in **Java** and **JavaFX** that allows pet owners to
 
 ---
 
-## 🧠 Skills Demonstrated
+## Skills Demonstrated
 
 - Object-Oriented Programming (OOP)  
 - GUI Design with JavaFX  
@@ -57,7 +59,7 @@ A desktop application built in **Java** and **JavaFX** that allows pet owners to
 
 ---
 
-## 🚶 How It Works (User Walkthrough)
+## How It Works (User Walkthrough)
 
 1. **Launch** the app.
 2. **Create** a pet profile with details like name, breed, age, and weight.
