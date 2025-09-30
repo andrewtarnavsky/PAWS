@@ -1,4 +1,4 @@
-package model;
+package com.paws.model;
 import java.time.LocalDate;
 import java.util.List;
 

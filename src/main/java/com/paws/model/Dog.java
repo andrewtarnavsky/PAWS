@@ -1,4 +1,4 @@
-package model;
+package com.paws.model;
 
 public class Dog {
     private String name;
