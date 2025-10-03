@@ -3,7 +3,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class LogEntry {
-    private Dog dog;
+    private Pet pet;
     private List<String> tags;
     private LocalDate date;
     private int moodLevel;
@@ -13,8 +13,8 @@ public class LogEntry {
     private String symptoms;
     private String notes;
 
-    public LogEntry(Dog dog, List<String> tags, LocalDate date, int moodLevel, int energyLevel, String appetite, double weight, String symptoms, String notes) {
-        this.dog = dog;
+    public LogEntry(Pet pet, List<String> tags, LocalDate date, int moodLevel, int energyLevel, String appetite, double weight, String symptoms, String notes) {
+        this.pet = pet;
         this.tags = tags;
         this.date = date;
         this.moodLevel = moodLevel;
@@ -26,8 +26,8 @@ public class LogEntry {
 
     }
 
-    public Dog getDog() {
-        return dog;
+    public Pet getDog() {
+        return pet;
     }
 
     public List<String> getTags() {
@@ -62,8 +62,8 @@ public class LogEntry {
         return notes;
     }
 
-    public void setDog(Dog dog) {
-        this.dog = dog;
+    public void setPet(Pet pet) {
+        this.pet = pet;
     }
 
     public void setTags(List<String> tags) {

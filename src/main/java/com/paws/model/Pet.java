@@ -1,20 +1,25 @@
 package com.paws.model;
 
-public class Dog {
+import java.time.LocalDate;
+import java.time.Period;
+
+public class Pet {
     private String name;
+    private String species;
     private String breed;
-    private int age;
+    private LocalDate dateOfBirth;
     private double weight;
     private String sex;
     private String medicalHistory; // Summary or notes
     private String allergies;
     private String notes; // general notes the user might want to add
 
-    public Dog(String name, String breed, int age, double weight, String sex,
+    public Pet(String name, String species, String breed, LocalDate dateOfBirth, double weight, String sex,
                String medicalHistory, String allergies, String notes) {
         this.name = name;
+        this.species = species;
         this.breed = breed;
-        this.age = age;
+        this.dateOfBirth = dateOfBirth;
         this.weight = weight;
         this.sex = sex;
         this.medicalHistory = medicalHistory;
@@ -26,12 +31,16 @@ public class Dog {
         return name;
     }
 
+    public String getSpecies(){
+        return species;
+    }
+
     public String getBreed(){
         return breed;
     }
 
-    public int getAge(){
-        return age;
+    public LocalDate getDateOfBirth(){
+        return dateOfBirth;
     }
 
     public double getWeight(){
@@ -58,12 +67,16 @@ public class Dog {
         this.name = name;
     }
 
+    public void changeSpecies(String species){
+        this.species = species;
+    }
+
     public void changeBreed(String breed){
         this.breed = breed;
     }
 
-    public void changeAge(int age){
-        this.age = age;
+    public void changeDateOfBirth(LocalDate dateOfBirth){
+        this.dateOfBirth = dateOfBirth;
     }
 
     public void changeWeight(double weight){
@@ -85,5 +98,15 @@ public class Dog {
     public void changeNotes(String notes) {
         this.notes = notes;
     }
+
+    public static int calculateAge(LocalDate dateOfBirth) {
+        LocalDate currentDate = LocalDate.now(); //current date
+        if (dateOfBirth.isAfter(currentDate)) {
+            throw new IllegalArgumentException("Date of birth cannot be in the future.");
+        }
+        Period age = Period.between(dateOfBirth, currentDate); //get the period between the two dates
+        return age.getYears(); //extract num years from period
+    }
+
 
 }
