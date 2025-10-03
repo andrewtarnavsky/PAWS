@@ -4,7 +4,7 @@
 /Users/a.t./Documents/GitHub/PAWS/src/main/java/com/paws/controller/ViewLogsController.java
 /Users/a.t./Documents/GitHub/PAWS/src/main/java/com/paws/model/LogEntry.java
 /Users/a.t./Documents/GitHub/PAWS/src/main/java/com/paws/controller/AddDogController.java
-/Users/a.t./Documents/GitHub/PAWS/src/main/java/com/paws/model/Dog.java
 /Users/a.t./Documents/GitHub/PAWS/src/main/java/com/paws/model/CSVExporter.java
 /Users/a.t./Documents/GitHub/PAWS/src/main/java/com/paws/model/PatternAnalyzer.java
 /Users/a.t./Documents/GitHub/PAWS/src/main/java/com/paws/model/DatabaseManager.java
+/Users/a.t./Documents/GitHub/PAWS/src/main/java/com/paws/model/Pet.java
