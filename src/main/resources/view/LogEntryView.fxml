@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.paws.controller.LogEntryController">
+
+    <center>
+        <VBox spacing="12">
+            <padding>
+                <Insets top="16" right="20" bottom="16" left="20"/>
+            </padding>
+
+            <Label text="New Daily Log Entry"
+                   style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+            <GridPane hgap="10" vgap="10">
+                <columnConstraints>
+                    <ColumnConstraints halignment="RIGHT" minWidth="130" />
+                    <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" />
+                </columnConstraints>
+
+                <!-- Row 0: Pet -->
+                <Label text="Pet:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <ChoiceBox fx:id="petChoiceBox"
+                           GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                <!-- Row 1: Date -->
+                <Label text="Date:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <DatePicker fx:id="datePicker"
+                            GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                <!-- Row 2: Mood -->
+                <Label text="Mood:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <ChoiceBox fx:id="moodChoiceBox"
+                           GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                <!-- Row 3: Energy -->
+                <Label text="Energy (1–10):" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                <HBox spacing="8" GridPane.rowIndex="3" GridPane.columnIndex="1">
+                    <Slider fx:id="energySlider" min="1" max="10" value="5" blockIncrement="1"
+                            majorTickUnit="1" minorTickCount="0" showTickMarks="true" showTickLabels="true"/>
+                    <Label fx:id="energyLabel" text="5"/>
+                </HBox>
+
+                <!-- Row 4: Appetite -->
+                <Label text="Appetite:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                <ChoiceBox fx:id="appetiteChoiceBox"
+                           GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                <!-- Row 5: Symptoms -->
+                <Label text="Symptoms:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                <TextArea fx:id="symptomsArea" prefRowCount="2"
+                          promptText="Vomiting, limping, cough, etc."
+                          GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+                <!-- Row 6: Tags -->
+                <Label text="Tags:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+                <TextField fx:id="tagsField"
+                           promptText="e.g. park, training, new food"
+                           GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+                <!-- Row 7: Notes -->
+                <Label text="Notes:" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+                <TextArea fx:id="notesArea" prefRowCount="3"
+                          GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+            </GridPane>
+
+            <HBox spacing="10">
+                <Button text="Save Entry"
+                        fx:id="saveEntryButton"
+                        onAction="#handleSaveEntry"/>
+                <Button text="Cancel"
+                        fx:id="cancelEntryButton"
+                        onAction="#handleCancel"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>
