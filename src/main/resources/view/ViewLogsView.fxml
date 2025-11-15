@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.paws.controller.ViewLogsController">
+
+    <!-- Top: filters & actions -->
+    <top>
+        <VBox spacing="8">
+            <padding>
+                <Insets top="12" right="16" bottom="8" left="16"/>
+            </padding>
+
+            <Label text="Log History"
+                   style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Pet:"/>
+                <ChoiceBox fx:id="petFilterChoiceBox"/>
+
+                <Label text="From:"/>
+                <DatePicker fx:id="fromDatePicker"/>
+
+                <Label text="To:"/>
+                <DatePicker fx:id="toDatePicker"/>
+
+                <Label text="Mood:"/>
+                <ChoiceBox fx:id="moodFilterChoiceBox"/>
+
+                <Button text="Apply Filters" onAction="#handleApplyFilters"/>
+                <Button text="Clear" onAction="#handleClearFilters"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <!-- Center: table of logs -->
+    <center>
+        <TableView fx:id="logsTable" prefHeight="400" prefWidth="800">
+            <columns>
+                <TableColumn fx:id="dateColumn" text="Date" prefWidth="100"/>
+                <TableColumn fx:id="petColumn" text="Pet" prefWidth="120"/>
+                <TableColumn fx:id="moodColumn" text="Mood" prefWidth="100"/>
+                <TableColumn fx:id="energyColumn" text="Energy" prefWidth="80"/>
+                <TableColumn fx:id="appetiteColumn" text="Appetite" prefWidth="100"/>
+                <TableColumn fx:id="symptomsColumn" text="Symptoms" prefWidth="200"/>
+                <TableColumn fx:id="tagsColumn" text="Tags" prefWidth="150"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <!-- Bottom: actions -->
+    <bottom>
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <padding>
+                <Insets top="8" right="16" bottom="12" left="16"/>
+            </padding>
+
+            <Button text="View Details" fx:id="viewDetailsButton"
+                    onAction="#handleViewDetails"/>
+            <Button text="Export to CSV" fx:id="exportCsvButton"
+                    onAction="#handleExportCsv"/>
+            <Button text="Back to Main" fx:id="backButton"
+                    onAction="#handleBackToMain"/>
+
+            <Region HBox.hgrow="ALWAYS"/>
+            <Label fx:id="summaryLabel" text="Showing 0 entries"/>
+        </HBox>
+    </bottom>
+</BorderPane>
