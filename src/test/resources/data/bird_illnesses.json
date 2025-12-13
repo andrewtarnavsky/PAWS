@@ -1,0 +1,119 @@
+[
+  {
+    "id": "bird_aspergillosis",
+    "name": "Aspergillosis",
+    "species": "bird",
+    "category": "Respiratory",
+    "commonSpecies": ["parrot", "cockatiel", "budgerigar", "raptor"],
+    "symptoms": [
+      "labored breathing",
+      "open-mouth breathing",
+      "tail bobbing at rest",
+      "wheezing or clicking sounds",
+      "exercise intolerance",
+      "lethargy",
+      "weight loss",
+      "decreased appetite"
+    ],
+    "possibleCauses": [
+      "moldy bedding or feed",
+      "poor ventilation",
+      "chronic stress",
+      "high dust or spore exposure"
+    ],
+    "notes": "Chronic fungal infection of the respiratory tract; often seen in birds housed in dusty or poorly ventilated environments."
+  },
+  {
+    "id": "bird_avian_chlamydiosis",
+    "name": "Avian Chlamydiosis (Psittacosis)",
+    "species": "bird",
+    "category": "Respiratory / Systemic",
+    "commonSpecies": ["parrot", "cockatiel", "parakeet", "lovebird"],
+    "symptoms": [
+      "sneezing",
+      "nasal discharge",
+      "conjunctivitis",
+      "fluffed-up feathers",
+      "lethargy",
+      "green droppings",
+      "weight loss",
+      "decreased appetite"
+    ],
+    "possibleCauses": [
+      "exposure to infected birds",
+      "crowded housing",
+      "poor hygiene"
+    ],
+    "notes": "Bacterial infection that can affect multiple organs and may be zoonotic; often presents with a combination of respiratory signs and general illness."
+  },
+  {
+    "id": "bird_bacterial_respiratory_infection",
+    "name": "Bacterial Respiratory Infection",
+    "species": "bird",
+    "category": "Respiratory",
+    "commonSpecies": ["parrot", "canary", "finch", "backyard chicken"],
+    "symptoms": [
+      "sneezing",
+      "nasal discharge",
+      "rattling or crackles when breathing",
+      "open-mouth breathing",
+      "tail bobbing",
+      "reduced vocalization",
+      "lethargy",
+      "decreased appetite"
+    ],
+    "possibleCauses": [
+      "poor air quality",
+      "sudden temperature changes",
+      "stress",
+      "concurrent viral infection"
+    ],
+    "notes": "Catch-all category for upper or lower respiratory tract infections caused by bacteria; severity can range from mild to life threatening."
+  },
+  {
+    "id": "bird_air_sac_disease",
+    "name": "Airsacculitis (Air Sac Disease)",
+    "species": "bird",
+    "category": "Respiratory",
+    "commonSpecies": ["parrot", "chicken", "turkey", "waterfowl"],
+    "symptoms": [
+      "labored breathing",
+      "tail bobbing",
+      "open-mouth breathing at rest",
+      "reduced activity",
+      "fluffed-up feathers",
+      "voice changes",
+      "exercise intolerance"
+    ],
+    "possibleCauses": [
+      "bacterial infection",
+      "viral infection",
+      "fungal infection",
+      "chronic respiratory irritation"
+    ],
+    "notes": "Inflammation or infection of the air sacs; often occurs together with other respiratory tract diseases."
+  },
+  {
+    "id": "bird_sinusitis_rhinitis",
+    "name": "Sinusitis / Rhinitis",
+    "species": "bird",
+    "category": "Respiratory",
+    "commonSpecies": ["parrot", "cockatiel", "budgerigar", "poultry"],
+    "symptoms": [
+      "sneezing",
+      "serous or cloudy nasal discharge",
+      "swollen tissue around the eyes",
+      "eye discharge",
+      "head shaking",
+      "reduced appetite",
+      "voice changes"
+    ],
+    "possibleCauses": [
+      "bacterial infection",
+      "viral infection",
+      "irritants in the air",
+      "vitamin A deficiency"
+    ],
+    "notes": "Inflammation of the upper airways and sinuses; can cause visible swelling around the eyes and nares."
+  }
+]
