@@ -1,0 +1,89 @@
+[
+  {
+    "id": "cat_gi_gastroenteritis",
+    "name": "Gastroenteritis",
+    "species": "cat",
+    "category": "gastrointestinal",
+    "bodySystem": "digestive",
+    "symptoms": [
+      "vomiting",
+      "diarrhea",
+      "decreased appetite",
+      "abdominal pain",
+      "lethargy"
+    ],
+    "severity": "moderate",
+    "notes": "Inflammation of the stomach and intestines, often related to diet changes, infections, or toxins.",
+    "recommendedActions": [
+      "monitor hydration",
+      "withhold food briefly as directed by a veterinarian",
+      "contact veterinarian if vomiting or diarrhea persists beyond 24 hours",
+      "seek emergency care if vomiting is severe or contains blood"
+    ]
+  },
+  {
+    "id": "cat_gi_pancreatitis",
+    "name": "Pancreatitis",
+    "species": "cat",
+    "category": "gastrointestinal",
+    "bodySystem": "digestive",
+    "symptoms": [
+      "vomiting",
+      "decreased appetite",
+      "abdominal pain",
+      "lethargy",
+      "dehydration",
+      "weight loss"
+    ],
+    "severity": "high",
+    "notes": "Inflammation of the pancreas that can be acute or chronic and is often underdiagnosed in cats.",
+    "recommendedActions": [
+      "schedule prompt veterinary exam",
+      "supportive care for pain, nausea, and hydration",
+      "monitor for worsening vomiting or lethargy",
+      "follow vet instructions on diet modification"
+    ]
+  },
+  {
+    "id": "cat_liver_hepatic_lipidosis",
+    "name": "Hepatic Lipidosis",
+    "species": "cat",
+    "category": "liver",
+    "bodySystem": "digestive",
+    "symptoms": [
+      "decreased appetite",
+      "rapid weight loss",
+      "lethargy",
+      "vomiting",
+      "jaundice"
+    ],
+    "severity": "emergency",
+    "notes": "Fat accumulation in the liver, often triggered by a period of anorexia; common life-threatening liver disease in cats.",
+    "recommendedActions": [
+      "seek emergency veterinary care",
+      "aggressive nutritional support may be required",
+      "monitor liver values as directed by veterinarian"
+    ]
+  },
+  {
+    "id": "cat_gi_inflammatory_bowel_disease",
+    "name": "Inflammatory Bowel Disease",
+    "species": "cat",
+    "category": "gastrointestinal",
+    "bodySystem": "digestive",
+    "symptoms": [
+      "chronic vomiting",
+      "chronic diarrhea",
+      "weight loss",
+      "decreased appetite",
+      "intermittent lethargy"
+    ],
+    "severity": "moderate",
+    "notes": "Chronic inflammation of the intestines that often causes waxing and waning GI signs.",
+    "recommendedActions": [
+      "schedule non-emergency veterinary visit",
+      "discuss diet trials and long-term management",
+      "monitor body weight and appetite trends"
+    ]
+  }
+]
