@@ -311,6 +311,211 @@
     "riskLevel": "chronic",
     "notes": "Excess body weight that increases the risk of joint disease, diabetes, and heart strain. Often develops gradually. Owners should discuss safe weight-loss plans with a veterinarian."
   }
+,
+  {
+    "id": "dog_ivdd",
+    "name": "Intervertebral Disc Disease (IVDD)",
+    "bodySystem": "neurologic / musculoskeletal",
+    "category": "chronic",
+    "severity": "high",
+    "commonIn": ["small breeds", "chondrodystrophic breeds"],
+    "symptoms": [
+      "Back pain",
+      "Neck pain",
+      "Reluctance to jump or climb",
+      "Weakness",
+      "Ataxia",
+      "Paralysis"
+    ],
+    "riskFactors": [
+      "Chondrodystrophic breeds",
+      "Obesity",
+      "Trauma"
+    ],
+    "recommendedActions": [
+      "Seek veterinary evaluation as soon as back or neck pain is noticed",
+      "Strict rest and activity restriction",
+      "Emergency care if paralysis or loss of bladder/bowel control develops"
+    ]
+  },
+  {
+    "id": "dog_epilepsy",
+    "name": "Idiopathic Epilepsy",
+    "bodySystem": "neurologic",
+    "category": "chronic",
+    "severity": "moderate",
+    "commonIn": ["young adult dogs", "certain predisposed breeds"],
+    "symptoms": [
+      "Seizures",
+      "Collapse",
+      "Paddling movements",
+      "Disorientation after episodes",
+      "Drooling",
+      "Loss of consciousness"
+    ],
+    "riskFactors": [
+      "Genetic predisposition",
+      "Onset between 1 and 5 years of age"
+    ],
+    "recommendedActions": [
+      "Track seizure frequency and duration in logs",
+      "See a veterinarian to rule out structural or metabolic causes",
+      "Follow long-term anti-seizure medication plan if prescribed"
+    ]
+  },
+  {
+    "id": "dog_vestibular_disease",
+    "name": "Vestibular Disease",
+    "bodySystem": "neurologic",
+    "category": "acute",
+    "severity": "moderate",
+    "commonIn": ["senior dogs"],
+    "symptoms": [
+      "Head tilt",
+      "Loss of balance",
+      "Circling",
+      "Nystagmus (abnormal eye movements)",
+      "Nausea",
+      "Vomiting"
+    ],
+    "riskFactors": [
+      "Older age",
+      "Ear infections",
+      "Idiopathic (unknown cause)"
+    ],
+    "recommendedActions": [
+      "Seek veterinary evaluation promptly",
+      "Provide non-slip surfaces and assist with mobility",
+      "Monitor for progression or improvement over several days"
+    ]
+  },
+  {
+    "id": "dog_degenerative_myelopathy",
+    "name": "Degenerative Myelopathy",
+    "bodySystem": "neurologic",
+    "category": "chronic progressive",
+    "severity": "high",
+    "commonIn": ["German Shepherds", "Boxers", "Corgis", "large breed dogs"],
+    "symptoms": [
+      "Hind limb weakness",
+      "Dragging of paws",
+      "Knuckling over",
+      "Ataxia",
+      "Difficulty rising",
+      "Progressive paralysis"
+    ],
+    "riskFactors": [
+      "Large breed dogs",
+      "Genetic predisposition (SOD1 mutation)"
+    ],
+    "recommendedActions": [
+      "Discuss genetic testing with a veterinarian for at-risk breeds",
+      "Implement physical therapy and weight management",
+      "Adapt the home environment for mobility support"
+    ]
+  },
+  {
+    "id": "dog_osteoarthritis",
+    "name": "Osteoarthritis (Degenerative Joint Disease)",
+    "bodySystem": "musculoskeletal",
+    "category": "chronic",
+    "severity": "moderate",
+    "commonIn": ["senior dogs", "large breeds"],
+    "symptoms": [
+      "Limping",
+      "Stiffness after rest",
+      "Difficulty rising",
+      "Reluctance to run or jump",
+      "Decreased activity level",
+      "Muscle loss"
+    ],
+    "riskFactors": [
+      "Aging",
+      "Previous joint injury",
+      "Obesity",
+      "Hip or elbow dysplasia"
+    ],
+    "recommendedActions": [
+      "Maintain lean body weight",
+      "Use joint supplements or medications as prescribed",
+      "Provide non-slip flooring and comfortable bedding",
+      "Adjust exercise intensity rather than stopping activity entirely"
+    ]
+  },
+  {
+    "id": "dog_hip_dysplasia",
+    "name": "Hip Dysplasia",
+    "bodySystem": "musculoskeletal",
+    "category": "congenital / developmental",
+    "severity": "variable",
+    "commonIn": ["large and giant breeds"],
+    "symptoms": [
+      "Bunny-hopping gait",
+      "Difficulty rising",
+      "Reluctance to climb stairs",
+      "Hind limb lameness",
+      "Pain when hips are touched"
+    ],
+    "riskFactors": [
+      "Genetic predisposition",
+      "Rapid growth",
+      "Excess body weight"
+    ],
+    "recommendedActions": [
+      "Screen at-risk breeds with hip radiographs",
+      "Implement weight management and controlled exercise",
+      "Discuss surgical and medical management options with a veterinarian"
+    ]
+  },
+  {
+    "id": "dog_cruciate_rupture",
+    "name": "Cranial Cruciate Ligament Rupture",
+    "bodySystem": "musculoskeletal",
+    "category": "orthopedic injury",
+    "severity": "high",
+    "commonIn": ["active dogs", "overweight dogs"],
+    "symptoms": [
+      "Sudden hind limb lameness",
+      "Non–weight bearing on affected leg",
+      "Knee swelling",
+      "Pain on manipulation of the knee"
+    ],
+    "riskFactors": [
+      "Obesity",
+      "High physical activity",
+      "Poor joint conformation"
+    ],
+    "recommendedActions": [
+      "Seek veterinary evaluation as soon as acute lameness appears",
+      "Restrict activity until diagnosis is confirmed",
+      "Discuss surgical repair and rehabilitation plans"
+    ]
+  },
+  {
+    "id": "dog_luxating_patella",
+    "name": "Medial Luxating Patella",
+    "bodySystem": "musculoskeletal",
+    "category": "orthopedic",
+    "severity": "variable",
+    "commonIn": ["toy breeds", "small breeds"],
+    "symptoms": [
+      "Intermittent skipping or hopping on a hind leg",
+      "Brief non–weight bearing episodes",
+      "Knee popping in and out",
+      "Reluctance to jump"
+    ],
+    "riskFactors": [
+      "Toy and small breed dogs",
+      "Congenital anatomic changes",
+      "Shallow trochlear groove"
+    ],
+    "recommendedActions": [
+      "Monitor mild cases for progression",
+      "Maintain ideal body weight",
+      "Seek orthopedic consultation for moderate to severe cases"
+    ]
+  }
+
 
 
 ]
