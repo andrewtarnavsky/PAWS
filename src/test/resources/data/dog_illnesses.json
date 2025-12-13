@@ -1,0 +1,162 @@
+[
+  {
+    "id": "dog_gastroenteritis",
+    "name": "Gastroenteritis",
+    "species": "dog",
+    "category": "gastrointestinal",
+    "symptoms": [
+      "vomiting",
+      "diarrhea",
+      "decreased_appetite",
+      "lethargy",
+      "abdominal_pain",
+      "dehydration"
+    ],
+    "severity": "moderate",
+    "notes": "Inflammation of the stomach and intestines; often acute and associated with dietary indiscretion or infection."
+  },
+  {
+    "id": "dog_pancreatitis",
+    "name": "Pancreatitis",
+    "species": "dog",
+    "category": "gastrointestinal",
+    "symptoms": [
+      "vomiting",
+      "abdominal_pain",
+      "decreased_appetite",
+      "lethargy",
+      "diarrhea",
+      "hunched_posture"
+    ],
+    "severity": "high",
+    "notes": "Inflammation of the pancreas; can range from mild to life-threatening and often causes significant abdominal discomfort."
+  },
+  {
+    "id": "dog_inflammatory_bowel_disease",
+    "name": "Inflammatory Bowel Disease",
+    "species": "dog",
+    "category": "gastrointestinal",
+    "symptoms": [
+      "chronic_diarrhea",
+      "vomiting",
+      "weight_loss",
+      "decreased_appetite",
+      "flatulence",
+      "intermittent_abdominal_pain"
+    ],
+    "severity": "moderate",
+    "notes": "Chronic inflammation of the intestines, typically causing long-term digestive signs and weight loss."
+  },
+  {
+    "id": "dog_intestinal_parasites",
+    "name": "Intestinal Parasites",
+    "species": "dog",
+    "category": "gastrointestinal",
+    "symptoms": [
+      "diarrhea",
+      "vomiting",
+      "weight_loss",
+      "bloated_abdomen",
+      "poor_coat_quality",
+      "decreased_appetite"
+    ],
+    "severity": "moderate",
+    "notes": "Parasitic infections such as roundworms, hookworms, or whipworms affecting the intestinal tract."
+  },
+  {
+    "id": "dog_gastric_dilatation_volvulus",
+    "name": "Gastric Dilatation-Volvulus",
+    "species": "dog",
+    "category": "gastrointestinal",
+    "symptoms": [
+      "nonproductive_vomiting",
+      "abdominal_distension",
+      "restlessness",
+      "pale_gums",
+      "collapse",
+      "rapid_breathing"
+    ],
+    "severity": "emergency",
+    "notes": "Also known as bloat; a life-threatening emergency that requires immediate veterinary attention."
+  },
+  {
+    "id": "dog_foreign_body_obstruction",
+    "name": "Foreign Body Obstruction",
+    "species": "dog",
+    "category": "gastrointestinal",
+    "symptoms": [
+      "vomiting",
+      "decreased_appetite",
+      "abdominal_pain",
+      "lethargy",
+      "constipation_or_straining",
+      "restlessness"
+    ],
+    "severity": "high",
+    "notes": "Ingestion of an object that becomes lodged in the gastrointestinal tract, potentially requiring surgery."
+  },
+  {
+    "id": "dog_chronic_hepatitis",
+    "name": "Chronic Hepatitis",
+    "species": "dog",
+    "category": "liver",
+    "symptoms": [
+      "vomiting",
+      "decreased_appetite",
+      "weight_loss",
+      "jaundice",
+      "increased_thirst",
+      "increased_urination"
+    ],
+    "severity": "moderate",
+    "notes": "Long-term inflammation of the liver that can progress to liver failure if untreated."
+  },
+  {
+    "id": "dog_cholestasis",
+    "name": "Cholestasis / Bile Duct Obstruction",
+    "species": "dog",
+    "category": "liver",
+    "symptoms": [
+      "jaundice",
+      "vomiting",
+      "decreased_appetite",
+      "pale_or_grey_stools",
+      "dark_urine",
+      "lethargy"
+    ],
+    "severity": "high",
+    "notes": "Reduced or blocked bile flow from the liver; may be caused by stones, inflammation, or tumors."
+  },
+  {
+    "id": "dog_portosystemic_shunt",
+    "name": "Portosystemic Shunt",
+    "species": "dog",
+    "category": "liver",
+    "symptoms": [
+      "stunted_growth",
+      "intermittent_disorientation",
+      "seizures",
+      "behavior_changes",
+      "excessive_drinking",
+      "excessive_urination"
+    ],
+    "severity": "high",
+    "notes": "Abnormal blood vessel shunts blood around the liver, reducing detoxification and causing neurologic signs."
+  },
+  {
+    "id": "dog_liver_neoplasia",
+    "name": "Liver Neoplasia",
+    "species": "dog",
+    "category": "liver",
+    "symptoms": [
+      "weight_loss",
+      "decreased_appetite",
+      "vomiting",
+      "lethargy",
+      "abdominal_swelling",
+      "jaundice"
+    ],
+    "severity": "high",
+    "notes": "Primary or metastatic tumors affecting the liver; signs are often chronic and nonspecific."
+  }
+]
