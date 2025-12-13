@@ -85,5 +85,97 @@
       "discuss diet trials and long-term management",
       "monitor body weight and appetite trends"
     ]
+  },
+  {
+    "id": "cat_resp_upper_respiratory_infection",
+    "name": "Feline Upper Respiratory Infection",
+    "species": "cat",
+    "category": "respiratory",
+    "bodySystem": "respiratory",
+    "symptoms": [
+      "sneezing",
+      "nasal discharge",
+      "ocular discharge",
+      "coughing",
+      "fever",
+      "decreased appetite"
+    ],
+    "severity": "moderate",
+    "notes": "Common complex of viral and bacterial infections affecting the upper airways, especially in young or shelter cats.",
+    "recommendedActions": [
+      "monitor eating and drinking",
+      "keep nose and eyes clean of discharge",
+      "contact veterinarian if breathing becomes labored or appetite is poor",
+      "isolate from other cats if contagious"
+    ]
+  },
+  {
+    "id": "cat_resp_asthma",
+    "name": "Feline Asthma",
+    "species": "cat",
+    "category": "respiratory",
+    "bodySystem": "respiratory",
+    "symptoms": [
+      "coughing",
+      "wheezing",
+      "labored breathing",
+      "open-mouth breathing during attacks",
+      "exercise intolerance"
+    ],
+    "severity": "high",
+    "notes": "Chronic inflammatory disease of the lower airways, often triggered by allergens or irritants.",
+    "recommendedActions": [
+      "seek veterinary evaluation for coughing or breathing episodes",
+      "minimize exposure to smoke, dust, and aerosols",
+      "use inhaled or oral medications as prescribed",
+      "treat acute respiratory distress as an emergency"
+    ]
+  },
+  {
+    "id": "cat_infectious_fip",
+    "name": "Feline Infectious Peritonitis",
+    "species": "cat",
+    "category": "infectious",
+    "bodySystem": "multi-system",
+    "symptoms": [
+      "fever",
+      "weight loss",
+      "lethargy",
+      "decreased appetite",
+      "abdominal distension",
+      "neurologic signs"
+    ],
+    "severity": "high",
+    "notes": "Serious viral disease associated with feline coronavirus mutation; can affect multiple organs.",
+    "recommendedActions": [
+      "contact veterinarian promptly if FIP is suspected",
+      "diagnostic testing and supportive care as directed",
+      "discuss evolving treatment options with veterinarian"
+    ]
+  },
+  {
+    "id": "cat_infectious_calicivirus",
+    "name": "Feline Calicivirus Infection",
+    "species": "cat",
+    "category": "infectious",
+    "bodySystem": "respiratory",
+    "symptoms": [
+      "oral ulcers",
+      "sneezing",
+      "nasal discharge",
+      "ocular discharge",
+      "fever",
+      "lameness",
+      "decreased appetite"
+    ],
+    "severity": "moderate",
+    "notes": "Viral infection that often accompanies upper respiratory disease and can cause mouth ulcers and lameness.",
+    "recommendedActions": [
+      "monitor appetite and hydration",
+      "offer soft or warmed food if mouth is sore",
+      "consult veterinarian for pain control and supportive care",
+      "keep cat isolated from other cats when actively sick"
+    ]
   }
+
 ]
