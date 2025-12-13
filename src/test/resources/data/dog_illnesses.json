@@ -514,8 +514,179 @@
       "Maintain ideal body weight",
       "Seek orthopedic consultation for moderate to severe cases"
     ]
+  },
+  {
+    "id": "dog_atopic_dermatitis",
+    "name": "Atopic Dermatitis (Environmental Allergies)",
+    "bodySystem": "dermatologic",
+    "category": "allergic",
+    "severity": "chronic",
+    "commonIn": ["young to middle-aged dogs", "certain predisposed breeds"],
+    "symptoms": [
+      "Itching",
+      "Scratching",
+      "Red skin",
+      "Recurrent ear infections",
+      "Licking paws",
+      "Hair loss"
+    ],
+    "riskFactors": [
+      "Genetic predisposition",
+      "Exposure to pollens, dust mites, or molds"
+    ],
+    "recommendedActions": [
+      "Track flare-ups and seasonality in logs",
+      "Discuss allergy testing or long-term management with a veterinarian",
+      "Use prescribed anti-itch or allergy medications as directed"
+    ]
+  },
+  {
+    "id": "dog_flea_allergy_dermatitis",
+    "name": "Flea Allergy Dermatitis",
+    "bodySystem": "dermatologic",
+    "category": "parasitic / allergic",
+    "severity": "moderate",
+    "commonIn": ["dogs without consistent flea prevention"],
+    "symptoms": [
+      "Intense itching",
+      "Scratching at tail base",
+      "Scabs and crusts on back and rump",
+      "Hair loss along tail and lower back"
+    ],
+    "riskFactors": [
+      "Lack of flea prevention",
+      "Warm, humid climates",
+      "Exposure to other animals with fleas"
+    ],
+    "recommendedActions": [
+      "Start consistent flea prevention for all pets in the household",
+      "Treat the environment for fleas if needed",
+      "Use soothing topical treatments as prescribed"
+    ]
+  },
+  {
+    "id": "dog_food_allergy",
+    "name": "Food Allergy / Adverse Food Reaction",
+    "bodySystem": "dermatologic / gastrointestinal",
+    "category": "allergic",
+    "severity": "variable",
+    "commonIn": ["dogs with chronic itching or GI upset"],
+    "symptoms": [
+      "Itching",
+      "Chronic ear infections",
+      "Red or inflamed skin",
+      "Vomiting",
+      "Diarrhea"
+    ],
+    "riskFactors": [
+      "History of recurrent skin or ear issues",
+      "Exposure to the same diet for a long time"
+    ],
+    "recommendedActions": [
+      "Discuss an elimination diet trial with a veterinarian",
+      "Avoid switching foods rapidly without guidance",
+      "Log diet changes and symptom improvements or flares"
+    ]
+  },
+  {
+    "id": "dog_sarcoptic_mange",
+    "name": "Sarcoptic Mange (Scabies)",
+    "bodySystem": "dermatologic",
+    "category": "parasitic",
+    "severity": "high discomfort",
+    "commonIn": ["dogs exposed to infected animals or environments"],
+    "symptoms": [
+      "Intense itching",
+      "Crusty skin lesions",
+      "Hair loss",
+      "Redness on ears, elbows, and abdomen"
+    ],
+    "riskFactors": [
+      "Contact with infected dogs or wildlife",
+      "Crowded living conditions",
+      "Poor parasite control"
+    ],
+    "recommendedActions": [
+      "Seek veterinary diagnosis and prescription treatment",
+      "Treat all in-contact dogs as recommended",
+      "Disinfect bedding and environment"
+    ]
+  },
+  {
+    "id": "dog_otitis_externa",
+    "name": "Otitis Externa (Ear Infection)",
+    "bodySystem": "ear",
+    "category": "infectious / inflammatory",
+    "severity": "moderate",
+    "commonIn": ["dogs with floppy ears", "dogs that swim frequently"],
+    "symptoms": [
+      "Ear scratching",
+      "Head shaking",
+      "Red or swollen ear canal",
+      "Odor from ears",
+      "Ear discharge"
+    ],
+    "riskFactors": [
+      "Moisture in ear canals from bathing or swimming",
+      "Allergies",
+      "Narrow or hairy ear canals"
+    ],
+    "recommendedActions": [
+      "Schedule veterinary exam to determine cause (bacteria, yeast, mites)",
+      "Use prescribed ear cleaners and medications as directed",
+      "Record recurrence in logs to monitor chronic patterns"
+    ]
+  },
+  {
+    "id": "dog_periodontal_disease",
+    "name": "Periodontal Disease",
+    "bodySystem": "dental / oral",
+    "category": "chronic",
+    "severity": "moderate",
+    "commonIn": ["middle-aged and senior dogs"],
+    "symptoms": [
+      "Bad breath",
+      "Red or swollen gums",
+      "Tartar buildup",
+      "Loose teeth",
+      "Drooling",
+      "Difficulty chewing"
+    ],
+    "riskFactors": [
+      "Lack of regular dental care",
+      "Small-breed dogs",
+      "Soft food diets"
+    ],
+    "recommendedActions": [
+      "Schedule professional dental cleaning when recommended",
+      "Start regular tooth brushing or dental chews",
+      "Monitor for changes in appetite or chewing behavior"
+    ]
+  },
+  {
+    "id": "dog_conjunctivitis",
+    "name": "Conjunctivitis (Pink Eye)",
+    "bodySystem": "ocular",
+    "category": "inflammatory / infectious",
+    "severity": "mild to moderate",
+    "commonIn": ["any age dog"],
+    "symptoms": [
+      "Red eyes",
+      "Eye discharge",
+      "Squinting",
+      "Rubbing at eyes",
+      "Swollen eyelids"
+    ],
+    "riskFactors": [
+      "Allergies",
+      "Irritants like dust or smoke",
+      "Infections",
+      "Foreign bodies in the eye"
+    ],
+    "recommendedActions": [
+      "Avoid using human eye drops without veterinary guidance",
+      "Seek veterinary exam if redness or discharge persists",
+      "Track recurrence, especially if linked to allergy seasons"
+    ]
   }
-
-
-
 ]
