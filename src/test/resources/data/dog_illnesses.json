@@ -239,6 +239,78 @@
     ],
     "riskLevel": "moderate",
     "notes": "Chronic condition that increases risk of diabetes, joint disease, and cardiovascular stress."
+  },
+  {
+  "id": "dog_hypothyroidism",
+  "name": "Hypothyroidism",
+  "category": "endocrine",
+  "symptoms": [
+    "low energy",
+    "weight gain",
+    "cold intolerance",
+    "hair loss",
+    "dry skin"
+  ],
+  "riskLevel": "chronic",
+  "notes": "Chronic thyroid hormone deficiency. Often seen in middle-aged or older dogs and can present with gradual changes in weight, coat quality, and activity level. Always consult a veterinarian for diagnosis."
+},
+  {
+    "id": "dog_diabetes_mellitus",
+    "name": "Diabetes Mellitus",
+    "category": "endocrine",
+    "symptoms": [
+      "increased thirst",
+      "increased urination",
+      "weight loss",
+      "increased appetite",
+      "urinary accidents"
+    ],
+    "riskLevel": "high",
+    "notes": "Metabolic disease where the body cannot properly regulate blood sugar. Common early signs include drinking and urinating more than usual, weight loss, and sometimes urinary accidents. Requires veterinary management."
+  },
+  {
+    "id": "dog_cushings_disease",
+    "name": "Cushing's Disease (Hyperadrenocorticism)",
+    "category": "endocrine",
+    "symptoms": [
+      "increased thirst",
+      "increased urination",
+      "increased appetite",
+      "panting",
+      "pot-bellied appearance",
+      "thinning coat"
+    ],
+    "riskLevel": "chronic",
+    "notes": "Condition caused by chronically elevated cortisol levels. Dogs often show increased appetite, thirst, panting, a rounded abdomen, and gradual coat or skin changes. Evaluation by a veterinarian is required."
+  },
+  {
+    "id": "dog_addisons_disease",
+    "name": "Addison's Disease (Hypoadrenocorticism)",
+    "category": "endocrine",
+    "symptoms": [
+      "vomiting",
+      "diarrhea",
+      "low energy",
+      "poor appetite",
+      "weight loss",
+      "collapse"
+    ],
+    "riskLevel": "emergency",
+    "notes": "Adrenal gland insufficiency that can cause vague chronic signs or sudden collapse. Because it can be life-threatening in crisis situations, any dog with these signs should be seen by a veterinarian urgently."
+  },
+  {
+    "id": "dog_obesity",
+    "name": "Obesity / Overweight",
+    "category": "metabolic",
+    "symptoms": [
+      "weight gain",
+      "exercise intolerance",
+      "low energy",
+      "difficulty breathing with exertion"
+    ],
+    "riskLevel": "chronic",
+    "notes": "Excess body weight that increases the risk of joint disease, diabetes, and heart strain. Often develops gradually. Owners should discuss safe weight-loss plans with a veterinarian."
   }
+
 
 ]
