@@ -110,5 +110,198 @@
     "severity": "severe",
     "urgency": "see_vet_soon",
     "notes": "Deep abscesses around the tooth roots or jaw, often associated with dental disease or trauma."
+  },
+  {
+    "id": "rabbit_pasteurellosis_snuffles",
+    "name": "Pasteurellosis (Snuffles)",
+    "species": "rabbit",
+    "category": "Respiratory",
+    "symptoms": [
+      "sneezing",
+      "nasal discharge",
+      "runny nose",
+      "eye discharge",
+      "matting of fur on paws from face wiping",
+      "noisy breathing",
+      "low energy",
+      "reduced appetite"
+    ],
+    "riskLevel": "moderate",
+    "chronic": true,
+    "notes": "Chronic bacterial respiratory disease often associated with nasal and ocular discharge and intermittent flare-ups."
+  },
+  {
+    "id": "rabbit_pneumonia",
+    "name": "Pneumonia",
+    "species": "rabbit",
+    "category": "Respiratory",
+    "symptoms": [
+      "labored breathing",
+      "rapid breathing",
+      "open-mouth breathing",
+      "low energy",
+      "fever",
+      "reduced appetite",
+      "cyanotic gums or tongue"
+    ],
+    "riskLevel": "high",
+    "chronic": false,
+    "notes": "Infection of the lungs causing respiratory distress. This condition can be life-threatening and requires prompt veterinary attention."
+  },
+  {
+    "id": "rabbit_e_cuniculi",
+    "name": "Encephalitozoon cuniculi Infection",
+    "species": "rabbit",
+    "category": "Neurologic",
+    "symptoms": [
+      "head tilt",
+      "loss of balance",
+      "circling",
+      "hind limb weakness",
+      "incontinence",
+      "tremors",
+      "low energy"
+    ],
+    "riskLevel": "moderate",
+    "chronic": true,
+    "notes": "Parasitic infection that can affect the nervous system and kidneys. Signs often include head tilt or balance issues."
+  },
+  {
+    "id": "rabbit_vestibular_disease",
+    "name": "Vestibular Disease (Head Tilt)",
+    "species": "rabbit",
+    "category": "Neurologic",
+    "symptoms": [
+      "head tilt",
+      "loss of balance",
+      "rolling episodes",
+      "nystagmus",
+      "disorientation",
+      "low energy"
+    ],
+    "riskLevel": "moderate",
+    "chronic": true,
+    "notes": "Disturbance of the balance system leading to head tilt and coordination problems. Can have multiple underlying causes."
+  },
+  {
+    "id": "rabbit_arthritis",
+    "name": "Arthritis",
+    "species": "rabbit",
+    "category": "Musculoskeletal",
+    "symptoms": [
+      "stiff movement",
+      "difficulty jumping",
+      "reluctance to move",
+      "low energy",
+      "reduced grooming",
+      "urine staining from difficulty posturing",
+      "weight gain or loss"
+    ],
+    "riskLevel": "moderate",
+    "chronic": true,
+    "notes": "Degenerative joint disease causing stiffness and discomfort, especially in older rabbits."
+  },
+  {
+    "id": "rabbit_fracture_limb_injury",
+    "name": "Fracture or Limb Injury",
+    "species": "rabbit",
+    "category": "Musculoskeletal",
+    "symptoms": [
+      "non-weight-bearing on limb",
+      "limping",
+      "pain response when handled",
+      "swelling",
+      "low energy",
+      "reluctance to move"
+    ],
+    "riskLevel": "high",
+    "chronic": false,
+    "notes": "Broken bones or acute limb injuries often related to falls or improper handling."
+  },
+  {
+    "id": "rabbit_bladder_sludge",
+    "name": "Bladder Sludge",
+    "species": "rabbit",
+    "category": "Urinary",
+    "symptoms": [
+      "thick or cloudy urine",
+      "sludgy urine",
+      "straining to urinate",
+      "urine scald on hind end",
+      "low energy",
+      "reduced appetite"
+    ],
+    "riskLevel": "moderate",
+    "chronic": true,
+    "notes": "Excess calcium precipitating in the bladder, leading to discomfort and urinary difficulty."
+  },
+  {
+    "id": "rabbit_urinary_tract_infection",
+    "name": "Urinary Tract Infection",
+    "species": "rabbit",
+    "category": "Urinary",
+    "symptoms": [
+      "frequent urination",
+      "straining to urinate",
+      "blood in urine",
+      "strong urine odor",
+      "urine scald",
+      "low energy"
+    ],
+    "riskLevel": "moderate",
+    "chronic": false,
+    "notes": "Infection of the urinary tract causing discomfort, changes in urination, and sometimes blood in the urine."
+  },
+  {
+    "id": "rabbit_bladder_stones",
+    "name": "Bladder Stones (Urolithiasis)",
+    "species": "rabbit",
+    "category": "Urinary",
+    "symptoms": [
+      "straining to urinate",
+      "blood in urine",
+      "painful abdomen",
+      "low energy",
+      "reduced appetite",
+      "frequent small urine spots"
+    ],
+    "riskLevel": "high",
+    "chronic": false,
+    "notes": "Mineral stones forming in the urinary tract and causing pain and difficulty urinating."
+  },
+  {
+    "id": "rabbit_uterine_adenocarcinoma",
+    "name": "Uterine Adenocarcinoma",
+    "species": "rabbit",
+    "category": "Reproductive",
+    "symptoms": [
+      "blood in urine",
+      "vaginal bleeding",
+      "low energy",
+      "weight loss",
+      "reduced appetite",
+      "enlarged abdomen"
+    ],
+    "riskLevel": "high",
+    "chronic": true,
+    "notes": "Malignant tumor of the uterus, especially common in unspayed female rabbits. Signs can be subtle early on."
+  },
+  {
+    "id": "rabbit_pyometra",
+    "name": "Pyometra (Uterine Infection)",
+    "species": "rabbit",
+    "category": "Reproductive",
+    "symptoms": [
+      "vaginal discharge",
+      "blood in urine or on bedding",
+      "low energy",
+      "fever",
+      "reduced appetite",
+      "enlarged abdomen"
+    ],
+    "riskLevel": "high",
+    "chronic": false,
+    "notes": "Pus-filled infection of the uterus. Considered a serious condition that needs veterinary care."
   }
+
 ]
