@@ -1,0 +1,114 @@
+[
+  {
+    "id": "rabbit_gi_stasis",
+    "name": "Gastrointestinal Stasis",
+    "species": "rabbit",
+    "category": "Gastrointestinal",
+    "symptoms": [
+      "reduced_appetite",
+      "anorexia",
+      "decreased_fecal_output",
+      "no_fecal_pellets",
+      "small_dry_fecal_pellets",
+      "lethargy",
+      "hunched_posture",
+      "teeth_grinding_pain",
+      "abdominal_discomfort",
+      "dehydration"
+    ],
+    "severity": "severe",
+    "urgency": "emergency",
+    "notes": "Common, potentially life-threatening condition where gut motility slows or stops; often linked to pain, stress, dehydration, or an underlying disease."
+  },
+  {
+    "id": "rabbit_gastric_obstruction",
+    "name": "Gastric Obstruction",
+    "species": "rabbit",
+    "category": "Gastrointestinal",
+    "symptoms": [
+      "sudden_anorexia",
+      "no_fecal_pellets",
+      "acute_abdominal_pain",
+      "lethargy",
+      "collapse",
+      "abdominal_distension",
+      "teeth_grinding_pain"
+    ],
+    "severity": "critical",
+    "urgency": "emergency",
+    "notes": "True blockage of the stomach or intestines, often caused by hair or foreign material; requires immediate veterinary care."
+  },
+  {
+    "id": "rabbit_coccidiosis_intestinal",
+    "name": "Intestinal Coccidiosis",
+    "species": "rabbit",
+    "category": "Gastrointestinal",
+    "symptoms": [
+      "diarrhea",
+      "soft_stools",
+      "weight_loss",
+      "poor_growth",
+      "lethargy",
+      "dehydration",
+      "reduced_appetite"
+    ],
+    "severity": "moderate",
+    "urgency": "see_vet_soon",
+    "notes": "Parasitic infection of the intestines, more common in young rabbits or crowded conditions."
+  },
+  {
+    "id": "rabbit_hepatic_coccidiosis",
+    "name": "Hepatic Coccidiosis",
+    "species": "rabbit",
+    "category": "Liver",
+    "symptoms": [
+      "weight_loss",
+      "poor_body_condition",
+      "lethargy",
+      "reduced_appetite",
+      "abdominal_discomfort",
+      "intermittent_diarrhea"
+    ],
+    "severity": "moderate",
+    "urgency": "see_vet_soon",
+    "notes": "Liver form of coccidiosis that can cause chronic weight loss and poor condition."
+  },
+  {
+    "id": "rabbit_dental_malocclusion",
+    "name": "Dental Malocclusion",
+    "species": "rabbit",
+    "category": "Dental",
+    "symptoms": [
+      "dropping_food",
+      "difficulty_eating",
+      "reduced_appetite",
+      "weight_loss",
+      "excess_salivation",
+      "wet_chin",
+      "facial_pain",
+      "eye_discharge"
+    ],
+    "severity": "chronic",
+    "urgency": "see_vet_soon",
+    "notes": "Overgrown or misaligned teeth that cause chronic pain and difficulty eating; very common in pet rabbits."
+  },
+  {
+    "id": "rabbit_dental_abscess",
+    "name": "Dental Abscess",
+    "species": "rabbit",
+    "category": "Dental",
+    "symptoms": [
+      "facial_swelling",
+      "jaw_swelling",
+      "pain_when_eating",
+      "reduced_appetite",
+      "weight_loss",
+      "eye_discharge",
+      "nasal_discharge",
+      "lethargy"
+    ],
+    "severity": "severe",
+    "urgency": "see_vet_soon",
+    "notes": "Deep abscesses around the tooth roots or jaw, often associated with dental disease or trauma."
+  }
+]
