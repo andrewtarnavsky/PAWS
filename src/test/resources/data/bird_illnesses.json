@@ -231,6 +231,115 @@
       "improve air quality and cage hygiene",
       "monitor for progression to more severe breathing difficulty"
     ]
+  },
+  {
+    "id": "bird_hypocalcemia",
+    "name": "Hypocalcemia",
+    "species": "bird",
+    "category": "Metabolic / Nutritional",
+    "symptoms": [
+      "weakness",
+      "tremors",
+      "seizures",
+      "poor balance",
+      "soft or thin eggshells",
+      "lethargy"
+    ],
+    "severity": "high",
+    "notes": "Low blood calcium, especially common in laying hens and some parrot species on imbalanced diets.",
+    "recommendedActions": [
+      "seek veterinary evaluation and bloodwork",
+      "start calcium supplementation under veterinary guidance",
+      "transition to a balanced, species-appropriate diet",
+      "monitor for recurrence of neurologic signs"
+    ]
+  },
+  {
+    "id": "bird_vitamin_a_deficiency",
+    "name": "Vitamin A Deficiency",
+    "species": "bird",
+    "category": "Nutritional Deficiency",
+    "symptoms": [
+      "poor feather quality",
+      "keratinized debris around eyes and nostrils",
+      "nasal discharge",
+      "oral plaques",
+      "lethargy",
+      "increased susceptibility to respiratory infections"
+    ],
+    "severity": "moderate",
+    "notes": "Common in birds fed seed-heavy diets without enough vitamin A–rich foods or formulated pellets.",
+    "recommendedActions": [
+      "consult a veterinarian for diet assessment",
+      "switch to a balanced pelleted diet with fresh vitamin A–rich vegetables",
+      "treat secondary infections as needed",
+      "monitor skin, feather, and respiratory health over time"
+    ]
+  },
+  {
+    "id": "bird_egg_binding",
+    "name": "Egg Binding (Dystocia)",
+    "species": "bird",
+    "category": "Reproductive Emergency",
+    "symptoms": [
+      "straining",
+      "sitting on cage bottom",
+      "fluffed-up feathers",
+      "labored breathing",
+      "weakness",
+      "lethargy",
+      "distended abdomen"
+    ],
+    "severity": "critical",
+    "notes": "Life-threatening condition where a bird is unable to pass an egg; requires immediate veterinary care.",
+    "recommendedActions": [
+      "seek emergency veterinary care immediately",
+      "keep the bird warm and minimize handling",
+      "do not attempt to manually remove the egg at home",
+      "address underlying diet, calcium status, and environmental stressors"
+    ]
+  },
+  {
+    "id": "bird_obesity",
+    "name": "Obesity",
+    "species": "bird",
+    "category": "Metabolic / Nutritional",
+    "symptoms": [
+      "excess body fat on the keel and abdomen",
+      "exercise intolerance",
+      "labored breathing with exertion",
+      "reluctance to fly",
+      "hepatic lipidosis risk"
+    ],
+    "severity": "moderate",
+    "notes": "Common in pet birds on high-fat, seed-based diets with limited exercise opportunities.",
+    "recommendedActions": [
+      "work with a veterinarian to design a gradual weight-loss plan",
+      "transition to a balanced pelleted diet with controlled treats",
+      "increase safe opportunities for flight or exercise",
+      "monitor weight regularly and adjust the plan as needed"
+    ]
+  },
+  {
+    "id": "bird_feather_plucking",
+    "name": "Feather Plucking (Feather Destructive Behavior)",
+    "species": "bird",
+    "category": "Behavioral / Dermatologic",
+    "symptoms": [
+      "broken feathers",
+      "bald patches",
+      "chewed or plucked feathers",
+      "self-directed pecking",
+      "stress behaviors",
+      "vocalization changes"
+    ],
+    "severity": "variable",
+    "notes": "Can be driven by medical issues (skin disease, pain, parasites) or behavioral causes such as stress, boredom, or improper environment.",
+    "recommendedActions": [
+      "schedule veterinary exam to rule out medical causes",
+      "enrich the environment with toys and foraging opportunities",
+      "ensure adequate sleep and predictable routine",
+      "work with an avian vet or behaviorist on a long-term management plan"
+    ]
   }
-
 ]
