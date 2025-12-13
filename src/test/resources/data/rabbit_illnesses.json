@@ -302,6 +302,144 @@
     "riskLevel": "high",
     "chronic": false,
     "notes": "Pus-filled infection of the uterus. Considered a serious condition that needs veterinary care."
+  },
+  {
+    "id": "rabbit_flystrike_myiasis",
+    "name": "Flystrike (Myiasis)",
+    "species": "rabbit",
+    "category": "Skin and Coat",
+    "symptoms": [
+      "maggots on skin",
+      "soiled fur",
+      "foul odor",
+      "open skin lesions",
+      "low energy",
+      "reduced appetite",
+      "pain response when touched"
+    ],
+    "riskLevel": "high",
+    "chronic": false,
+    "notes": "Infestation of fly larvae in soiled or damaged skin, often around the hindquarters. Considered an emergency condition."
+  },
+  {
+    "id": "rabbit_fur_mites",
+    "name": "Fur Mites (Cheyletiellosis)",
+    "species": "rabbit",
+    "category": "Skin and Coat",
+    "symptoms": [
+      "dandruff",
+      "flaky skin",
+      "itching",
+      "scratching",
+      "patchy hair loss",
+      "mild skin redness",
+      "restlessness"
+    ],
+    "riskLevel": "moderate",
+    "chronic": false,
+    "notes": "External parasites causing flaky skin and itching; may be noticed as 'walking dandruff' on the fur."
+  },
+  {
+    "id": "rabbit_flea_infestation",
+    "name": "Flea Infestation",
+    "species": "rabbit",
+    "category": "Skin and Coat",
+    "symptoms": [
+      "itching",
+      "scratching",
+      "visible fleas or flea dirt",
+      "hair loss patches",
+      "restlessness",
+      "skin redness"
+    ],
+    "riskLevel": "moderate",
+    "chronic": false,
+    "notes": "Infestation with fleas leading to itching, discomfort, and sometimes anemia in severe cases."
+  },
+  {
+    "id": "rabbit_ear_mites",
+    "name": "Ear Mites",
+    "species": "rabbit",
+    "category": "Skin and Coat",
+    "symptoms": [
+      "head shaking",
+      "ear scratching",
+      "crusty debris in ears",
+      "ear redness",
+      "pain when ears are touched",
+      "low energy"
+    ],
+    "riskLevel": "moderate",
+    "chronic": false,
+    "notes": "Parasitic infestation of the ear canal causing itchiness, pain, and thick crusts in the ears."
+  },
+  {
+    "id": "rabbit_pododermatitis_sore_hocks",
+    "name": "Pododermatitis (Sore Hocks)",
+    "species": "rabbit",
+    "category": "Skin and Coat",
+    "symptoms": [
+      "redness on feet",
+      "hair loss on hocks",
+      "sores on feet",
+      "reluctance to move",
+      "limping",
+      "low energy"
+    ],
+    "riskLevel": "moderate",
+    "chronic": true,
+    "notes": "Inflammation and ulceration of the skin on the bottoms of the feet, often related to rough or inappropriate flooring."
+  },
+  {
+    "id": "rabbit_heat_stroke",
+    "name": "Heat Stroke",
+    "species": "rabbit",
+    "category": "Environmental and Metabolic",
+    "symptoms": [
+      "panting",
+      "rapid breathing",
+      "drooling",
+      "low energy",
+      "collapse",
+      "warm ears",
+      "confusion or disorientation"
+    ],
+    "riskLevel": "high",
+    "chronic": false,
+    "notes": "Overheating due to high environmental temperatures or poor ventilation. This condition can be life-threatening."
+  },
+  {
+    "id": "rabbit_obesity",
+    "name": "Obesity",
+    "species": "rabbit",
+    "category": "Environmental and Metabolic",
+    "symptoms": [
+      "excess body fat",
+      "difficulty grooming",
+      "low energy",
+      "reluctance to move",
+      "reduced ability to jump",
+      "urine scald from poor posture"
+    ],
+    "riskLevel": "moderate",
+    "chronic": true,
+    "notes": "Excess body weight that can predispose to arthritis, pododermatitis, and other health problems."
+  },
+  {
+    "id": "rabbit_skin_abscess",
+    "name": "Skin Abscess",
+    "species": "rabbit",
+    "category": "Skin and Coat",
+    "symptoms": [
+      "firm lump under skin",
+      "localized swelling",
+      "warmth at the site",
+      "pain when touched",
+      "low energy",
+      "reduced appetite"
+    ],
+    "riskLevel": "moderate",
+    "chronic": false,
+    "notes": "Localized collection of pus under the skin, often resulting from a bite, wound, or foreign object."
   }
-
 ]
