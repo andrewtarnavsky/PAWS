@@ -263,7 +263,112 @@
       "discuss kidney-supportive diet and medications",
       "monitor body weight, appetite, and hydration at home"
     ]
+  },
+  {
+    "id": "cat_endocrine_hyperthyroidism",
+    "name": "Hyperthyroidism",
+    "species": "cat",
+    "category": "endocrine",
+    "bodySystem": "endocrine",
+    "symptoms": [
+      "weight loss",
+      "increased appetite",
+      "increased thirst",
+      "increased urination",
+      "hyperactivity",
+      "vomiting"
+    ],
+    "severity": "high",
+    "notes": "Very common endocrine disorder in older cats caused by overactive thyroid glands.",
+    "recommendedActions": [
+      "schedule bloodwork to confirm diagnosis",
+      "discuss medication, diet, or radioactive iodine therapy with veterinarian",
+      "monitor weight and appetite regularly"
+    ]
+  },
+  {
+    "id": "cat_endocrine_diabetes_mellitus",
+    "name": "Diabetes Mellitus",
+    "species": "cat",
+    "category": "endocrine",
+    "bodySystem": "endocrine",
+    "symptoms": [
+      "increased thirst",
+      "increased urination",
+      "increased appetite",
+      "weight loss",
+      "lethargy",
+      "weakness"
+    ],
+    "severity": "high",
+    "notes": "Metabolic disease in which the body cannot properly regulate blood sugar.",
+    "recommendedActions": [
+      "schedule veterinary visit for blood and urine testing",
+      "start insulin and diet management as prescribed",
+      "monitor for signs of low blood sugar and other complications"
+    ]
+  },
+  {
+    "id": "cat_chronic_obesity",
+    "name": "Obesity",
+    "species": "cat",
+    "category": "chronic",
+    "bodySystem": "multi-system",
+    "symptoms": [
+      "weight gain",
+      "reduced activity",
+      "exercise intolerance",
+      "difficulty grooming"
+    ],
+    "severity": "moderate",
+    "notes": "Excess body weight that increases risk for diabetes, arthritis, and other diseases.",
+    "recommendedActions": [
+      "work with veterinarian on a weight-loss plan",
+      "adjust calorie intake and treat frequency",
+      "increase controlled play and activity"
+    ]
+  },
+  {
+    "id": "cat_dental_periodontal_disease",
+    "name": "Periodontal Disease",
+    "species": "cat",
+    "category": "dental",
+    "bodySystem": "oral",
+    "symptoms": [
+      "bad breath",
+      "tartar buildup",
+      "red or bleeding gums",
+      "drooling",
+      "difficulty chewing",
+      "decreased appetite"
+    ],
+    "severity": "moderate",
+    "notes": "Common dental disease involving plaque, tartar, and gum inflammation that can progress to tooth loss.",
+    "recommendedActions": [
+      "schedule dental examination",
+      "professional dental cleaning as recommended",
+      "implement home dental care if possible"
+    ]
+  },
+  {
+    "id": "cat_chronic_osteoarthritis",
+    "name": "Osteoarthritis",
+    "species": "cat",
+    "category": "musculoskeletal",
+    "bodySystem": "musculoskeletal",
+    "symptoms": [
+      "stiffness",
+      "reluctance to jump",
+      "reduced activity",
+      "difficulty grooming",
+      "behavior changes related to pain"
+    ],
+    "severity": "moderate",
+    "notes": "Degenerative joint disease that causes chronic pain and reduced mobility, often under-recognized in older cats.",
+    "recommendedActions": [
+      "discuss pain management and joint-support therapies with veterinarian",
+      "provide soft bedding and easy access to resources",
+      "monitor activity level and comfort over time"
+    ]
   }
-
-
 ]
