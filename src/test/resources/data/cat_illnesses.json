@@ -176,6 +176,94 @@
       "consult veterinarian for pain control and supportive care",
       "keep cat isolated from other cats when actively sick"
     ]
+  },
+  {
+    "id": "cat_urinary_flutd",
+    "name": "Feline Lower Urinary Tract Disease",
+    "species": "cat",
+    "category": "urinary",
+    "bodySystem": "urinary",
+    "symptoms": [
+      "straining to urinate",
+      "frequent urination",
+      "blood in urine",
+      "urinating outside the litter box",
+      "vocalizing in the litter box"
+    ],
+    "severity": "high",
+    "notes": "A group of conditions affecting the bladder and urethra; can be painful and may lead to obstruction, especially in male cats.",
+    "recommendedActions": [
+      "treat any straining or blood in urine as urgent",
+      "contact veterinarian the same day",
+      "seek emergency care if the cat cannot pass urine",
+      "increase water intake as advised by veterinarian"
+    ]
+  },
+  {
+    "id": "cat_urinary_uti",
+    "name": "Urinary Tract Infection",
+    "species": "cat",
+    "category": "urinary",
+    "bodySystem": "urinary",
+    "symptoms": [
+      "frequent urination",
+      "small urine volumes",
+      "blood in urine",
+      "urinating outside the litter box",
+      "straining to urinate"
+    ],
+    "severity": "moderate",
+    "notes": "Bacterial infection of the bladder or urinary tract, more common in older cats or those with underlying disease.",
+    "recommendedActions": [
+      "schedule veterinary visit for urinalysis and culture",
+      "follow prescribed antibiotic course if indicated",
+      "monitor for recurrence of signs"
+    ]
+  },
+  {
+    "id": "cat_urinary_urethral_obstruction",
+    "name": "Urethral Obstruction",
+    "species": "cat",
+    "category": "urinary",
+    "bodySystem": "urinary",
+    "symptoms": [
+      "straining with little or no urine",
+      "frequent trips to litter box",
+      "vocalizing in pain",
+      "lethargy",
+      "vomiting",
+      "distended painful abdomen"
+    ],
+    "severity": "emergency",
+    "notes": "Life-threatening blockage of the urethra, most common in male cats; requires immediate veterinary treatment.",
+    "recommendedActions": [
+      "seek emergency veterinary care immediately",
+      "do not wait more than a few hours if the cat cannot urinate",
+      "monitor for recurrence after treatment"
+    ]
+  },
+  {
+    "id": "cat_kidney_chronic_kidney_disease",
+    "name": "Chronic Kidney Disease",
+    "species": "cat",
+    "category": "kidney",
+    "bodySystem": "urinary",
+    "symptoms": [
+      "increased thirst",
+      "increased urination",
+      "weight loss",
+      "decreased appetite",
+      "vomiting",
+      "lethargy"
+    ],
+    "severity": "high",
+    "notes": "Common chronic disease in older cats where kidney function gradually declines over time.",
+    "recommendedActions": [
+      "schedule veterinary exam and bloodwork",
+      "discuss kidney-supportive diet and medications",
+      "monitor body weight, appetite, and hydration at home"
+    ]
   }
+
 
 ]
