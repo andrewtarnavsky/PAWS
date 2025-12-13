@@ -61,7 +61,7 @@
       "decreased_appetite"
     ],
     "severity": "moderate",
-    "notes": "Parasitic infections such as roundworms, hookworms, or whipworms affecting the intestinal tract."
+    "notes": "Parasitic infections such as roundworms, hookworms, or whip-worms affecting the intestinal tract."
   },
   {
     "id": "dog_gastric_dilatation_volvulus",
@@ -158,5 +158,87 @@
     ],
     "severity": "high",
     "notes": "Primary or metastatic tumors affecting the liver; signs are often chronic and nonspecific."
+  },
+  {
+    "id": "dog_hypothyroidism",
+    "name": "Hypothyroidism",
+    "category": "endocrine",
+    "species": "dog",
+    "symptoms": [
+      "weight_gain",
+      "low_energy",
+      "lethargy",
+      "cold_intolerance",
+      "dry_skin",
+      "hair_loss"
+    ],
+    "riskLevel": "moderate",
+    "notes": "Common in middle-aged dogs. Often presents with chronic low energy and gradual weight gain despite no change in diet."
+  },
+  {
+    "id": "dog_diabetes_mellitus",
+    "name": "Diabetes Mellitus",
+    "category": "endocrine",
+    "species": "dog",
+    "symptoms": [
+      "increased_thirst",
+      "increased_urination",
+      "increased_appetite",
+      "weight_loss",
+      "lethargy",
+      "recurrent_infections"
+    ],
+    "riskLevel": "high",
+    "notes": "Characterized by persistent high blood sugar. Classic pattern is increased thirst, increased urination, and weight loss."
+  },
+  {
+    "id": "dog_cushings_disease",
+    "name": "Cushing's Disease (Hyperadrenocorticism)",
+    "category": "endocrine",
+    "species": "dog",
+    "symptoms": [
+      "increased_thirst",
+      "increased_urination",
+      "increased_appetite",
+      "panting",
+      "pot_bellied_appearance",
+      "hair_loss",
+      "thin_skin"
+    ],
+    "riskLevel": "moderate",
+    "notes": "Caused by chronic excess cortisol. Often presents with a pot-bellied abdomen, panting, and increased thirst/urination."
+  },
+  {
+    "id": "dog_addisons_disease",
+    "name": "Addison's Disease (Hypoadrenocorticism)",
+    "category": "endocrine",
+    "species": "dog",
+    "symptoms": [
+      "vomiting",
+      "diarrhea",
+      "low_energy",
+      "collapse",
+      "weight_loss",
+      "poor_appetite",
+      "intermittent_weakness"
+    ],
+    "riskLevel": "high",
+    "notes": "Often has vague, intermittent signs like GI upset and low energy that can suddenly progress to collapse during an Addisonian crisis."
+  },
+  {
+    "id": "dog_obesity",
+    "name": "Obesity",
+    "category": "metabolic",
+    "species": "dog",
+    "symptoms": [
+      "weight_gain",
+      "exercise_intolerance",
+      "low_energy",
+      "difficulty_breathing_on_exertion",
+      "heat_intolerance"
+    ],
+    "riskLevel": "moderate",
+    "notes": "Chronic condition that increases risk of diabetes, joint disease, and cardiovascular stress."
   }
+
 ]
