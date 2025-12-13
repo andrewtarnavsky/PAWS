@@ -115,5 +115,122 @@
       "vitamin A deficiency"
     ],
     "notes": "Inflammation of the upper airways and sinuses; can cause visible swelling around the eyes and nares."
+  },
+  {
+    "id": "bird_avian_influenza",
+    "name": "Avian Influenza",
+    "species": "bird",
+    "category": "Respiratory / Systemic Viral",
+    "symptoms": [
+      "lethargy",
+      "decreased appetite",
+      "respiratory distress",
+      "open-mouth breathing",
+      "nasal discharge",
+      "sneezing",
+      "diarrhea"
+    ],
+    "severity": "high",
+    "notes": "Highly contagious viral infection causing respiratory and systemic signs; certain strains can be zoonotic.",
+    "recommendedActions": [
+      "isolate affected bird from any flock mates",
+      "seek urgent veterinary assessment",
+      "implement strict biosecurity and disinfection",
+      "avoid handling without appropriate protection"
+    ]
+  },
+  {
+    "id": "bird_psittacosis",
+    "name": "Psittacosis (Chlamydiosis)",
+    "species": "bird",
+    "category": "Respiratory / Systemic Bacterial",
+    "symptoms": [
+      "lethargy",
+      "fluffed-up feathers",
+      "decreased appetite",
+      "weight loss",
+      "nasal discharge",
+      "ocular discharge",
+      "respiratory distress",
+      "green droppings"
+    ],
+    "severity": "high",
+    "notes": "Chlamydial infection common in parrots and some other pet birds; important zoonotic disease.",
+    "recommendedActions": [
+      "seek veterinary care promptly for testing and antibiotics",
+      "isolate the bird from people at higher risk (immunocompromised, elderly)",
+      "improve cage hygiene and air quality",
+      "follow veterinary guidance for long-term treatment and monitoring"
+    ]
+  },
+  {
+    "id": "bird_aspergillosis",
+    "name": "Aspergillosis",
+    "species": "bird",
+    "category": "Fungal Respiratory",
+    "symptoms": [
+      "chronic respiratory distress",
+      "open-mouth breathing",
+      "tail bobbing",
+      "voice changes",
+      "lethargy",
+      "decreased appetite",
+      "weight loss"
+    ],
+    "severity": "high",
+    "notes": "Fungal infection of the respiratory system, often associated with poor ventilation, dusty environments, or immunosuppression.",
+    "recommendedActions": [
+      "schedule veterinary evaluation and diagnostic imaging if possible",
+      "improve ventilation and reduce dust and mold exposure",
+      "follow prescribed antifungal treatment",
+      "minimize stress and handle gently"
+    ]
+  },
+  {
+    "id": "bird_bacterial_pneumonia",
+    "name": "Bacterial Pneumonia",
+    "species": "bird",
+    "category": "Respiratory Bacterial",
+    "symptoms": [
+      "respiratory distress",
+      "labored breathing",
+      "open-mouth breathing",
+      "nasal discharge",
+      "coughing or clicking sounds",
+      "lethargy",
+      "decreased appetite"
+    ],
+    "severity": "high",
+    "notes": "Lower respiratory tract infection that can develop secondary to other illness or poor environmental conditions.",
+    "recommendedActions": [
+      "seek prompt veterinary examination and imaging",
+      "start appropriate antibiotic therapy as prescribed",
+      "maintain a warm, low-stress environment",
+      "monitor closely for worsening breathing effort"
+    ]
+  },
+  {
+    "id": "bird_upper_respiratory_infection",
+    "name": "Upper Respiratory Infection",
+    "species": "bird",
+    "category": "Respiratory",
+    "symptoms": [
+      "sneezing",
+      "nasal discharge",
+      "ocular discharge",
+      "mild respiratory distress",
+      "reduced vocalization",
+      "lethargy",
+      "decreased appetite"
+    ],
+    "severity": "moderate",
+    "notes": "Can be viral or bacterial in origin; often associated with environmental stress, drafts, or poor air quality.",
+    "recommendedActions": [
+      "schedule veterinary visit to determine cause and treatment",
+      "keep the bird warm and away from drafts",
+      "improve air quality and cage hygiene",
+      "monitor for progression to more severe breathing difficulty"
+    ]
   }
+
 ]
