@@ -1,0 +1,24 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Java / Maven
+target/
+*/target/
+*.class
+
+# React / Vite
+frontend/node_modules/
+frontend/dist/
+
+# macOS
+.DS_Store
+
+# Environment files
+.env
+*.env
+
+# Local database files
+*.db
+data/*.db
+backend/data/*.db
