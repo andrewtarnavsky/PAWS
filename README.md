@@ -1,69 +1,85 @@
 # 🐾 PAWS — Pet Activity & Wellness System
 
-A desktop application built in **Java** and **JavaFX** that allows pet owners to log, monitor, and analyze their pet’s daily wellbeing. This app helps identify and graph patterns in your pet’s health, detect potential health risks early, and maintain detailed records over time — all on your machine.
+PAWS is a **local-first full-stack pet wellness application** built with **Java, Spring Boot, React, and SQLite**. It helps pet owners record daily wellness logs, view health trend dashboards, and maintain detailed pet health records locally on their machine.
 
-**[Detailed project overview »](https://docs.google.com/document/d/1JjbYGPes-9iQuyaDdFjE7aha5WyOLs5-SVndDCux4SE/edit?usp=sharing)**
+The goal of PAWS is to give pet owners a structured way to track patterns in their pet’s wellbeing over time. The app is **non-diagnostic** and is designed to surface wellness trends, repeated symptoms, and potential health-related concerns that may help users decide when to seek veterinary advice.
 
 ---
 
-## Features
+## Key Features
 
-### Core Functionality (Must-Haves)
+- **Pet Profiles**  
+  Create and manage pet profiles with details such as name, species, breed, age, weight, and date of birth.
 
-- **Pet Profiles:** Create and manage one or more pet profiles (name, breed, age, weight, date of birth, etc.), saved with SQLite.
-- **Daily Log Entries:** Record daily wellbeing data such as mood, energy level, appetite, symptoms, notes, and custom tags.
-- **Log Storage & Retrieval:** All logs are stored in SQLite and retrieved per pet profile; prevents duplicate entries for the same day.
-- **View Past Logs:** Review logs in a table or list format with sorting and filtering by date, mood, or energy level.
-- **CSV Export:** Export selected logs to a CSV file with headers, formatted for easy sharing with a veterinarian.
-- **Pattern & Trend Analyzer:** Detect recurring issues (e.g., low energy 3+ days, loss of appetite, repeated symptoms) and highlight potential health risks or conditions. Provides non-diagnostic suggestions to help owners decide if a vet visit may be needed.
-- **Basic JavaFX UI:** Simple, clean interface for pet profiles, logging, log viewing, exporting, and navigation. Includes optional light/dark theme toggle.
-- **Data Visualizations:** Charts for mood and energy trends over time.
-  
-### Bonus Features (Nice-to-Haves)
+- **Daily Wellness Logs**  
+  Record daily information including mood, energy level, appetite, symptoms, notes, and custom observations.
 
-- **Multi-Day Summary:** Weekly/monthly summaries showing averages and common tags.
-- **Advanced Search & Filters:** Filter logs by keyword, date range, or symptom.
-- **Reminders & Notifications:** Alerts for missed entries or daily reminders.
-- **Data Backup & Restore:** Export/import the full database for backups.
+- **Local Data Storage**  
+  Store pet profiles and daily logs locally using SQLite, keeping records on the user’s machine instead of relying on cloud storage.
 
-### Stretch Goals
+- **Trend Dashboards**  
+  View trends over time for wellness factors such as energy, appetite, mood, weight, and repeated symptoms.
 
-- **Login System (Local):** Optional secure login with hashed passwords.
-- **Multi-Language Support:** Resource bundles to support multiple languages.
-- **Expanded Pet Support:** Extend beyond dogs to include cats and other species.
+- **PatternAnalyzer System**  
+  Analyze logged symptoms against species-specific illness datasets to surface non-diagnostic wellness insights and potential health-related risks.
+
+- **Species-Specific Illness Datasets**  
+  Support symptom-pattern analysis using structured datasets for different pet species.
+
+- **REST API Backend**  
+  Use Spring Boot REST API endpoints to manage pets, logs, trend metrics, and analysis results.
+
+- **React Frontend**  
+  Provide a clean user interface for creating profiles, entering logs, viewing records, and reviewing trend-based insights.
 
 ---
 
 ## Tech Stack
 
-- Java  
-- JavaFX (UI)  
-- SQLite (Local Database)  
-- JDBC (Database Connectivity)  
-- File I/O (CSV Export)  
-- OOP Design Principles  
-- Git/GitHub (Version Control)
+### Frontend
+- React
+- JavaScript / TypeScript
+- HTML/CSS
+- Tailwind CSS
+
+### Backend
+- Java
+- Spring Boot
+- REST APIs
+- Maven
+- JUnit
+
+### Database
+- SQLite
+- JDBC
+
+### Tools
+- Git/GitHub
+- IntelliJ IDEA
+- VS Code
 
 ---
 
 ## Skills Demonstrated
 
-- Object-Oriented Programming (OOP)  
-- GUI Design with JavaFX  
-- Data Persistence using SQLite  
-- Database Integration with JDBC  
-- Pattern Recognition and Basic Data Analysis  
-- File I/O for CSV Export and Backups  
-- MVC-Inspired Application Design  
-- Git for Source Control and Branching
+- Java backend development
+- Spring Boot REST API design
+- Full-stack application architecture
+- React frontend development
+- SQLite/JDBC database persistence
+- Object-oriented programming
+- MVC-inspired application structure
+- Data modeling
+- JUnit testing
+- Local-first software design
+- Non-diagnostic pattern analysis
+- Git/GitHub version control
 
 ---
 
-## How It Works (User Walkthrough)
+## Application Architecture
 
-1. **Launch** the app.
-2. **Create** a pet profile with details like name, breed, age, and weight.
-3. **Log daily** information such as mood, appetite, energy, symptoms, and notes.
-4. **View** entries in a clean table or list format with sorting and filtering.
-5. **Receive alerts** if recurring patterns or potential health risks are detected.
-6. **Export** logs to CSV for veterinary consultations or personal tracking.
+PAWS uses a local-first full-stack architecture:
+
+```text
+React Frontend  →  Spring Boot REST API  →  SQLite Database
