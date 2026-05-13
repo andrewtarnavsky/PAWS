@@ -5,14 +5,19 @@
 # Java / Maven
 target/
 */target/
+**/target/
 *.class
 
 # React / Vite
 frontend/node_modules/
 frontend/dist/
+frontend/.vite/
+**/node_modules/
+**/.vite/
 
 # macOS
 .DS_Store
+**/.DS_Store
 
 # Environment files
 .env
