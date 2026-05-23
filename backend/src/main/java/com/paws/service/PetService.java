@@ -32,4 +32,8 @@ public class PetService {
         }
         return Optional.empty();
     }
+
+    public boolean deletePetById(Long id) {
+        return pets.removeIf(pet -> pet.getId().equals(id));
+    }
 }
