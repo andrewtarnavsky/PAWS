@@ -28,6 +28,11 @@ public class Pet {
         this.allergies = allergies;
         this.notes = notes;
     }
+
+    public Pet() {
+
+    }
+
     public Long getId() {
         return id;
     }
