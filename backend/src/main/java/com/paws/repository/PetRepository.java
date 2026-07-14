@@ -31,4 +31,21 @@ public class PetRepository {
             return pet;
         });
     }
+
+    public List<Pet> findBySpecies(String species) {
+        String sql = "SELECT * FROM pets WHERE LOWER(species) = LOWER(?)";
+
+        return jdbcTemplate.query(sql, (resultSet, rowNum) -> {
+            Pet pet = new Pet();
+
+            pet.setId(resultSet.getLong("id"));
+            pet.setName(resultSet.getString("name"));
+            pet.setSpecies(resultSet.getString("species"));
+            pet.setBreed(resultSet.getString("breed"));
+            pet.setAge(resultSet.getInt("age"));
+            pet.setWeight(resultSet.getDouble("weight"));
+
+            return pet;
+        }, species);
+    }
 }
