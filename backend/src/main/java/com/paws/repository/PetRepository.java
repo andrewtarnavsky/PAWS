@@ -48,4 +48,12 @@ public class PetRepository {
             return pet;
         }, species);
     }
+
+    public boolean deleteById(Long id) {
+        String sql = "DELETE FROM pets WHERE id = ?";
+
+        int rowsAffected = jdbcTemplate.update(sql, id);
+
+        return rowsAffected > 0;
+    }
 }
