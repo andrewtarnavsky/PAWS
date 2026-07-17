@@ -21,7 +21,7 @@ public class DatabaseInitializer {
                 name TEXT NOT NULL,
                 species TEXT,
                 breed TEXT,
-                age INTEGER,
+                date_of_birth DATE,
                 weight REAL
             )
         """);

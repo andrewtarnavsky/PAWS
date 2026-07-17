@@ -1,9 +1,12 @@
 package com.paws.repository;
 
 import com.paws.model.Pet;
+import org.springframework.context.annotation.Bean;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Repository
@@ -17,36 +20,13 @@ public class PetRepository {
 
     public List<Pet> findAll() {
         String sql = "SELECT * FROM pets";
-
-        return jdbcTemplate.query(sql, (resultSet, rowNum) -> {
-            Pet pet = new Pet();
-
-            pet.setId(resultSet.getLong("id"));
-            pet.setName(resultSet.getString("name"));
-            pet.setSpecies(resultSet.getString("species"));
-            pet.setBreed(resultSet.getString("breed"));
-            pet.setAge(resultSet.getInt("age"));
-            pet.setWeight(resultSet.getDouble("weight"));
-
-            return pet;
-        });
+        return jdbcTemplate.query(sql, new BeanPropertyRowMapper<Pet>(Pet.class));
     }
 
     public List<Pet> findBySpecies(String species) {
         String sql = "SELECT * FROM pets WHERE LOWER(species) = LOWER(?)";
 
-        return jdbcTemplate.query(sql, (resultSet, rowNum) -> {
-            Pet pet = new Pet();
-
-            pet.setId(resultSet.getLong("id"));
-            pet.setName(resultSet.getString("name"));
-            pet.setSpecies(resultSet.getString("species"));
-            pet.setBreed(resultSet.getString("breed"));
-            pet.setAge(resultSet.getInt("age"));
-            pet.setWeight(resultSet.getDouble("weight"));
-
-            return pet;
-        }, species);
+        return jdbcTemplate.query(sql, new BeanPropertyRowMapper<Pet>(Pet.class), species);
     }
 
     public boolean deleteById(Long id) {
