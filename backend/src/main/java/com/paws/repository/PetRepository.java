@@ -5,8 +5,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
+import java.sql.PreparedStatement;
+import java.sql.Statement;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
@@ -38,6 +42,33 @@ public class PetRepository {
         } catch (EmptyResultDataAccessException exception){
             return Optional.empty();
         }
+    }
+
+    public Pet save(Pet pet) {
+        String sql = """
+            INSERT INTO pets (name, species, breed, age, weight)
+            VALUES (?, ?, ?, ?, ?)
+        """;
+
+        KeyHolder keyHolder = new GeneratedKeyHolder();
+
+        jdbcTemplate.update(connection -> {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+
+            preparedStatement.setString(1, pet.getName());
+            preparedStatement.setString(2, pet.getSpecies());
+            preparedStatement.setString(3, pet.getBreed());
+            preparedStatement.setObject(4, pet.getAge());
+            preparedStatement.setObject(5, pet.getWeight());
+
+            return preparedStatement;
+        }, keyHolder);
+
+        if (keyHolder.getKey() != null) {
+            pet.setId(keyHolder.getKey().longValue());
+        }
+
+        return pet;
     }
 
     public boolean deleteById(Long id) {
