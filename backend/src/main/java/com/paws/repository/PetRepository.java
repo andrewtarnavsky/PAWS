@@ -18,26 +18,26 @@ import java.util.Optional;
 @Repository
 public class PetRepository {
 
-    private final JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate db;
 
-    public PetRepository(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
+    public PetRepository(JdbcTemplate db) {
+        this.db = db;
     }
 
     public List<Pet> findAll() {
         String sql = "SELECT * FROM pets";
-        return jdbcTemplate.query(sql, new BeanPropertyRowMapper<Pet>(Pet.class));
+        return db.query(sql, new BeanPropertyRowMapper<Pet>(Pet.class));
     }
 
     public List<Pet> findBySpecies(String species) {
         String sql = "SELECT * FROM pets WHERE LOWER(species) = LOWER(?)";
-        return jdbcTemplate.query(sql, new BeanPropertyRowMapper<Pet>(Pet.class), species);
+        return db.query(sql, new BeanPropertyRowMapper<Pet>(Pet.class), species);
     }
 
     public Optional<Pet> findById(Long id){
         String sql = "SELECT * FROM pets WHERE id = ?";
         try {
-            Pet pet = jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<Pet>(Pet.class), id);
+            Pet pet = db.queryForObject(sql, new BeanPropertyRowMapper<Pet>(Pet.class), id);
             return Optional.of(pet);
         } catch (EmptyResultDataAccessException exception){
             return Optional.empty();
@@ -52,7 +52,7 @@ public class PetRepository {
 
         KeyHolder keyHolder = new GeneratedKeyHolder();
 
-        jdbcTemplate.update(connection -> {
+        db.update(connection -> {
             PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 
             preparedStatement.setString(1, pet.getName());
@@ -71,9 +71,23 @@ public class PetRepository {
         return pet;
     }
 
+    public boolean update(Pet pet){
+        String sql = """
+                UPDATE pets
+                SET name = ?, species = ?, breed = ?, age = ?, weight = ?
+                WHERE id = ?
+                """;
+
+        int rowsAffected = db.update(
+                sql,
+                pet.getName(), pet.getSpecies(), pet.getBreed(), pet.getAge(), pet.getWeight(), pet.getId()
+        );
+        return rowsAffected > 0;
+    }
+
     public boolean deleteById(Long id) {
         String sql = "DELETE FROM pets WHERE id = ?";
-        int rowsAffected = jdbcTemplate.update(sql, id);
+        int rowsAffected = db.update(sql, id);
         return rowsAffected > 0;
     }
 

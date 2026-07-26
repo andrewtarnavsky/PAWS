@@ -8,20 +8,22 @@ public class Pet {
     private String name;
     private String species;
     private String breed;
-    private LocalDate dateOfBirth;
+    private int age;
+    //private LocalDate dateOfBirth;
     private double weight;
     private String sex;
     private String medicalHistory; // Summary or notes
     private String allergies;
     private String notes; // general notes the user might want to add
 
-    public Pet(Long id, String name, String species, String breed, LocalDate dateOfBirth, double weight, String sex,
+    public Pet(Long id, String name, String species, String breed, int age, double weight, String sex,
                String medicalHistory, String allergies, String notes) {
         this.id = id;
         this.name = name;
         this.species = species;
         this.breed = breed;
-        this.dateOfBirth = dateOfBirth;
+        this.age = age;
+        //this.dateOfBirth = dateOfBirth;
         this.weight = weight;
         this.sex = sex;
         this.medicalHistory = medicalHistory;
@@ -48,9 +50,11 @@ public class Pet {
         return breed;
     }
 
-    public LocalDate getDateOfBirth(){
-        return dateOfBirth;
-    }
+    public int getAge() {return age;}
+
+    //public LocalDate getDateOfBirth(){
+    //    return dateOfBirth;
+    //}
 
     public double getWeight(){
         return weight;
@@ -75,10 +79,8 @@ public class Pet {
     public void setId(Long id){
         this.id = id;
     }
-    public void setName(String name){
 
-        this.name = name;
-    }
+    public void setName(String name){ this.name = name; }
 
     public void setSpecies(String species){
         this.species = species;
@@ -88,9 +90,11 @@ public class Pet {
         this.breed = breed;
     }
 
-    public void setDateOfBirth(LocalDate dateOfBirth){
-        this.dateOfBirth = dateOfBirth;
-    }
+    public void setAge(int age) {this.age = age;}
+
+//    public void setDateOfBirth(LocalDate dateOfBirth){
+//        this.dateOfBirth = dateOfBirth;
+//    }
 
     public void setWeight(double weight){
         this.weight = weight;

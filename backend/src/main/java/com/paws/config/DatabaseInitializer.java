@@ -7,15 +7,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class DatabaseInitializer {
 
-    private final JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate db;
 
-    public DatabaseInitializer(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
+    public DatabaseInitializer(JdbcTemplate db) {
+        this.db = db;
     }
 
     @PostConstruct
     public void createTables() {
-        jdbcTemplate.execute("""
+        db.execute("""
             CREATE TABLE IF NOT EXISTS pets (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 name TEXT NOT NULL,
