@@ -1,6 +1,7 @@
 package com.paws.service;
 
 import com.paws.model.Pet;
+import com.paws.repository.PetRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -11,29 +12,46 @@ import java.util.concurrent.atomic.AtomicLong;
 @Service
 public class PetService {
 
-    private final List<Pet> pets = new ArrayList<>();
-    private final AtomicLong nextId = new AtomicLong(1);
+    private final PetRepository petRepository;
+
+    public PetService(PetRepository petRepository){
+        this.petRepository = petRepository;
+    }
 
     public List<Pet> getAllPets() {
-        return pets;
+        return petRepository.findAll();
     }
 
     public Pet createPet(Pet pet) {
-        pet.setId(nextId.getAndIncrement());
-        pets.add(pet);
-        return pet;
+        pet.setId(null);
+        return petRepository.save(pet);
     }
 
     public Optional<Pet> getPetById(Long id) {
-        for (Pet pet : pets) {
-            if (pet.getId().equals(id)) {
-                return Optional.of(pet);
-            }
-        }
-        return Optional.empty();
+        return petRepository.findById(id);
     }
 
+    public List<Pet> getPetsBySpecies(String species){
+        return petRepository.findBySpecies(species);
+    }
+
+    public Optional<Pet> updatePet(Long id, Pet pet){
+        Optional<Pet> existingPet = petRepository.findById(id);
+        if(existingPet.isEmpty()){
+            return Optional.empty();
+        }
+
+        pet.setId(id); //So that you can match to the pet in db, since pet doesn't have an id yet
+        boolean updated = petRepository.update(pet);
+        if(!updated){
+            return Optional.empty();
+        } else{
+            return Optional.of(pet);
+        }
+    }
+    
+
     public boolean deletePetById(Long id) {
-        return pets.removeIf(pet -> pet.getId().equals(id));
+        return petRepository.deleteById(id);
     }
 }
