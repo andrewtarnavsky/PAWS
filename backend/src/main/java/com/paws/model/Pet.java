@@ -8,15 +8,15 @@ public class Pet {
     private String name;
     private String species;
     private String breed;
-    private int age;
+    private Integer age;
     //private LocalDate dateOfBirth;
-    private double weight;
+    private Double weight;
     private String sex;
     private String medicalHistory; // Summary or notes
     private String allergies;
     private String notes; // general notes the user might want to add
 
-    public Pet(Long id, String name, String species, String breed, int age, double weight, String sex,
+    public Pet(Long id, String name, String species, String breed, Integer age, Double weight, String sex,
                String medicalHistory, String allergies, String notes) {
         this.id = id;
         this.name = name;
@@ -50,13 +50,13 @@ public class Pet {
         return breed;
     }
 
-    public int getAge() {return age;}
+    public Integer getAge() {return age;}
 
     //public LocalDate getDateOfBirth(){
     //    return dateOfBirth;
     //}
 
-    public double getWeight(){
+    public Double getWeight(){
         return weight;
     }
 
@@ -90,13 +90,13 @@ public class Pet {
         this.breed = breed;
     }
 
-    public void setAge(int age) {this.age = age;}
+    public void setAge(Integer age) {this.age = age;}
 
 //    public void setDateOfBirth(LocalDate dateOfBirth){
 //        this.dateOfBirth = dateOfBirth;
 //    }
 
-    public void setWeight(double weight){
+    public void setWeight(Double weight){
         this.weight = weight;
     }
 

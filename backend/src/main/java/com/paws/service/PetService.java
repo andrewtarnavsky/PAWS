@@ -35,20 +35,21 @@ public class PetService {
         return petRepository.findBySpecies(species);
     }
 
-    public Optional<Pet> updatePet(Long id, Pet pet){
-        Optional<Pet> existingPet = petRepository.findById(id);
-        if(existingPet.isEmpty()){
+    public Optional<Pet> updatePet(Long id, Pet updatedPet){
+        Optional<Pet> existingPetOptional = petRepository.findById(id);
+        if(existingPetOptional.isEmpty()){
             return Optional.empty();
         }
 
-        pet.setId(id); //So that you can match to the pet in db, since pet doesn't have an id yet
-        boolean updated = petRepository.update(pet);
+        updatedPet.setId(id); //So that you can match to the pet in db, since pet doesn't have an id yet
+        boolean updated = petRepository.update(updatedPet);
         if(!updated){
             return Optional.empty();
         } else{
-            return Optional.of(pet);
+            return Optional.of(updatedPet);
         }
     }
+
     
 
     public boolean deletePetById(Long id) {
