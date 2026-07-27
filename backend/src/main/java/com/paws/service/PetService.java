@@ -50,7 +50,42 @@ public class PetService {
         }
     }
 
-    
+    public Optional<Pet> patchPet(Long id, Pet partialPet){
+        Optional<Pet> existingPetOptional = petRepository.findById(id);
+        if(existingPetOptional.isEmpty()){
+            return Optional.empty();
+        }
+
+        Pet existingPet = existingPetOptional.get();
+
+        if(partialPet.getName() != null){
+            existingPet.setName(partialPet.getName());
+        }
+
+        if (partialPet.getSpecies() != null) {
+            existingPet.setSpecies(partialPet.getSpecies());
+        }
+
+        if (partialPet.getBreed() != null) {
+            existingPet.setBreed(partialPet.getBreed());
+        }
+
+        if (partialPet.getAge() != null) {
+            existingPet.setAge(partialPet.getAge());
+        }
+
+        if (partialPet.getWeight() != null) {
+            existingPet.setWeight(partialPet.getWeight());
+        }
+
+        boolean updated = petRepository.update(existingPet);
+        if(!updated){
+            return Optional.empty();
+        } else {
+            return Optional.of(existingPet);
+        }
+
+    }
 
     public boolean deletePetById(Long id) {
         return petRepository.deleteById(id);
