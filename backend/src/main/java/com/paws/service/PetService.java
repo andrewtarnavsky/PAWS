@@ -23,7 +23,7 @@ public class PetService {
     }
 
     public Pet createPet(Pet pet) {
-        pet.setId(null);
+        pet.setId(null); //In case a value was already set
         return petRepository.save(pet);
     }
 

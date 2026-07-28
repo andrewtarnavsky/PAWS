@@ -6,7 +6,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/pets")
@@ -23,18 +22,24 @@ public class PetController {
         return petService.getAllPets();
     }
 
-    @PostMapping
-    public Pet createPet(@RequestBody Pet pet) {
-        return petService.createPet(pet);
-    }
-
     @GetMapping("/{id}")
     public ResponseEntity<Pet> getPetById(@PathVariable Long id) {
-        Optional<Pet> pet = petService.getPetById(id);
-        if(pet.isPresent()){
-            return ResponseEntity.ok(pet.get());
-        }
-        return ResponseEntity.notFound().build();
+        return petService.getPetById(id).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
+    }
+
+    @PostMapping
+    public ResponseEntity<Pet> createPet(@RequestBody Pet pet) {
+        return ResponseEntity.ok(petService.createPet(pet));
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Pet> replacePet(@PathVariable Long id, @RequestBody Pet pet){
+        return petService.updatePet(id, pet).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
+    }
+
+    @PatchMapping("/{id}")
+    public ResponseEntity<Pet> patchPet(@PathVariable Long id, @RequestBody Pet pet){
+        return petService.patchPet(id, pet).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
     }
 
     @DeleteMapping("/{id}")
