@@ -25,5 +25,21 @@ public class DatabaseInitializer {
                 weight REAL
             )
         """);
+
+        db.execute("""
+        CREATE TABLE IF NOT EXISTS log_entries (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            pet_id INTEGER NOT NULL,
+            log_date TEXT NOT NULL,
+            mood INTEGER,
+            energy INTEGER,
+            appetite INTEGER,
+            symptoms TEXT,
+            symptom_severity INTEGER,
+            notes TEXT,
+            FOREIGN KEY (pet_id) REFERENCES pets(id)
+        )
+        """);
     }
+
 }
