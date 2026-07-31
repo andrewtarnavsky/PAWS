@@ -31,7 +31,15 @@ public class LogEntryRepository {
         } catch (EmptyResultDataAccessException exception) {
             return Optional.empty();
         }
+    }
 
+    public List<LogEntry> findByPetId(Long petId){
+        String sql = """
+                SELECT * FROM log_entries
+                WHERE pet_id = ?
+                ORDER BY log_date DESC
+                """;
 
+        return db.query(sql, new BeanPropertyRowMapper<>(LogEntry.class), petId);
     }
 }
