@@ -105,4 +105,15 @@ public class LogEntryRepository {
 
         return rowsAffected > 0;
     }
+
+    public boolean deleteById(Long id){
+        String sql = """
+                DELETE FROM log_entries
+                WHERE id = ?
+                """;
+
+        int rowsAffected = db.update(sql,id);
+        
+        return rowsAffected > 0;
+    }
 }
