@@ -75,4 +75,34 @@ public class LogEntryRepository {
         }
         return logEntry;
     }
+
+    public boolean update(LogEntry logEntry){
+        String sql = """
+                UPDATE log_entries
+                SET pet_id = ?,
+                    log_date = ?,
+                    mood = ?,
+                    energy = ?,
+                    appetite = ?,
+                    symptoms = ?,
+                    symptom_severity = ?,
+                    notes = ?
+                WHERE id = ?
+                """;
+
+        int rowsAffected = db.update(sql,
+                logEntry.getPetId(),
+                logEntry.getPetId(),
+                logEntry.getLogDate().toString(),
+                logEntry.getMood(),
+                logEntry.getEnergy(),
+                logEntry.getAppetite(),
+                logEntry.getSymptoms(),
+                logEntry.getSymptomSeverity(),
+                logEntry.getNotes(),
+                logEntry.getId()
+        );
+
+        return rowsAffected > 0;
+    }
 }
