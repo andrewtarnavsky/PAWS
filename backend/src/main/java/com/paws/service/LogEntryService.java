@@ -31,11 +31,17 @@ public class LogEntryService {
         return logEntryRepository.findByPetId(petId);
     }
 
-    public LogEntry createLogEntry(Long petId, LogEntry logEntry){
+    public Optional<LogEntry> createLogEntry(Long petId, LogEntry logEntry){
         Optional<Pet> optionalPet = petRepository.findById(petId);
         if(optionalPet.isEmpty()){
-            
+            return Optional.empty();
         }
-        return logEntryRepository.save(logEntry);
+        logEntry.setId(null);
+        logEntry.setPetId(petId);
+
+        LogEntry logEntrySaved = logEntryRepository.save(logEntry);
+        return Optional.of(logEntrySaved);
     }
+
+    
 }
