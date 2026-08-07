@@ -43,5 +43,21 @@ public class LogEntryService {
         return Optional.of(logEntrySaved);
     }
 
-    
+    public Optional<LogEntry> updateLogEntry(Long id, LogEntry updatedLogEntry){
+        Optional<LogEntry> existingLogEntryOptional = logEntryRepository.findById(id);
+
+        if(existingLogEntryOptional.isEmpty()){
+            return Optional.empty();
+        }
+
+        updatedLogEntry.setId(id);
+        updatedLogEntry.setPetId(existingLogEntryOptional.get().getPetId());
+
+        boolean updated = logEntryRepository.update(updatedLogEntry);
+        if(!updated){
+            return Optional.empty();
+        } else {
+            return Optional.of(updatedLogEntry);
+        }
+    }
 }

@@ -92,7 +92,6 @@ public class LogEntryRepository {
 
         int rowsAffected = db.update(sql,
                 logEntry.getPetId(),
-                logEntry.getPetId(),
                 logEntry.getLogDate().toString(),
                 logEntry.getMood(),
                 logEntry.getEnergy(),
