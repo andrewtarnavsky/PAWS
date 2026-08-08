@@ -60,4 +60,52 @@ public class LogEntryService {
             return Optional.of(updatedLogEntry);
         }
     }
+
+    public Optional<LogEntry> patchLogEntry(Long id, LogEntry partialLogEntry){
+        Optional<LogEntry> existingLogEntryOptional = logEntryRepository.findById(id);
+        if(existingLogEntryOptional.isEmpty()){
+            return Optional.empty();
+        }
+
+        LogEntry existingLogEntry = existingLogEntryOptional.get();
+
+        if(partialLogEntry.getLogDate() != null) {
+            existingLogEntry.setLogDate(partialLogEntry.getLogDate());
+        }
+
+        if (partialLogEntry.getMood() != null) {
+            existingLogEntry.setMood(partialLogEntry.getMood());
+        }
+
+        if (partialLogEntry.getEnergy() != null) {
+            existingLogEntry.setEnergy(partialLogEntry.getEnergy());
+        }
+
+        if (partialLogEntry.getAppetite() != null) {
+            existingLogEntry.setAppetite(partialLogEntry.getAppetite());
+        }
+
+        if (partialLogEntry.getSymptoms() != null) {
+            existingLogEntry.setSymptoms(partialLogEntry.getSymptoms());
+        }
+
+        if (partialLogEntry.getSymptomSeverity() != null) {
+            existingLogEntry.setSymptomSeverity(partialLogEntry.getSymptomSeverity());
+        }
+
+        if (partialLogEntry.getNotes() != null) {
+            existingLogEntry.setNotes(partialLogEntry.getNotes());
+        }
+
+        boolean updated = logEntryRepository.update(existingLogEntry);
+        if(!updated){
+            return Optional.empty();
+        } else {
+            return Optional.of(existingLogEntry);
+        }
+    }
+
+    boolean deleteLogEntry(Long id){
+        return logEntryRepository.deleteById(id);
+    }
 }
