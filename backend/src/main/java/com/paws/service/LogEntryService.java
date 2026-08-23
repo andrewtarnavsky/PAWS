@@ -106,7 +106,7 @@ public class LogEntryService {
         }
     }
 
-    boolean deleteLogEntry(Long id){
+    public boolean deleteLogEntry(Long id){
         return logEntryRepository.deleteById(id);
     }
 }

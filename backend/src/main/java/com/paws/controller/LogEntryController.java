@@ -4,6 +4,7 @@ import com.paws.service.PetService;
 import com.paws.model.LogEntry;
 import com.paws.model.Pet;
 import com.paws.service.LogEntryService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,23 +31,32 @@ public class LogEntryController {
     }
 
     @PostMapping("/pets/{petId}/logs")
-    public Optional<LogEntry> createLogEntry(Long petId, LogEntry logEntry){
-
+    public ResponseEntity<LogEntry> createLogEntry(Long petId, LogEntry logEntry){
+        return logEntryService.createLogEntry(petId, logEntry)
+                .map(savedLogEntry -> ResponseEntity.status(HttpStatus.CREATED).body(savedLogEntry))
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @PutMapping("/logs/{logId}")
-    public Optional<LogEntry> updateLogEntry(Long id, LogEntry updatedLogEntry){
-
+    public ResponseEntity<LogEntry> replaceLogEntry(Long id, LogEntry updatedLogEntry){
+        return logEntryService.updateLogEntry(id, updatedLogEntry)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @PatchMapping("/logs/{logId}")
-    public Optional<LogEntry> patchLogEntry(Long id, LogEntry partialLogEntry){
-
+    public ResponseEntity<LogEntry> patchLogEntry(Long id, LogEntry partialLogEntry){
+        return logEntryService.patchLogEntry(id, partialLogEntry)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @DeleteMapping("/logs/{logId}")
-    boolean deleteLogEntry(@PathVariable Long id){
-        return logEntryService.deleteLogEntry(id);
+    public ResponseEntity<Void> deleteLogEntryById(@PathVariable Long id){
+        if(logEntryService.deleteLogEntry(id)){
+            ResponseEntity.noContent().build();
+        }
+        return ResponseEntity.notFound().build();
     }
 }
 
