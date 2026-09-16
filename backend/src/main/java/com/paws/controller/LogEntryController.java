@@ -21,8 +21,8 @@ public class LogEntryController {
     }
 
     @GetMapping("/logs/{logId}")
-    public ResponseEntity<LogEntry> getLogEntryById(@PathVariable Long id){
-        return logEntryService.getLogEntryById(id).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
+    public ResponseEntity<LogEntry> getLogEntryById(@PathVariable Long logId){
+        return logEntryService.getLogEntryById(logId).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
     }
 
     @GetMapping("/pets/{petId}/logs")
@@ -31,29 +31,29 @@ public class LogEntryController {
     }
 
     @PostMapping("/pets/{petId}/logs")
-    public ResponseEntity<LogEntry> createLogEntry(Long petId, LogEntry logEntry){
+    public ResponseEntity<LogEntry> createLogEntry(@PathVariable Long petId, @RequestBody LogEntry logEntry){
         return logEntryService.createLogEntry(petId, logEntry)
                 .map(savedLogEntry -> ResponseEntity.status(HttpStatus.CREATED).body(savedLogEntry))
                 .orElse(ResponseEntity.notFound().build());
     }
 
     @PutMapping("/logs/{logId}")
-    public ResponseEntity<LogEntry> replaceLogEntry(Long id, LogEntry updatedLogEntry){
-        return logEntryService.updateLogEntry(id, updatedLogEntry)
+    public ResponseEntity<LogEntry> replaceLogEntry(@PathVariable Long logId, @RequestBody LogEntry updatedLogEntry){
+        return logEntryService.updateLogEntry(logId, updatedLogEntry)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
 
     @PatchMapping("/logs/{logId}")
-    public ResponseEntity<LogEntry> patchLogEntry(Long id, LogEntry partialLogEntry){
-        return logEntryService.patchLogEntry(id, partialLogEntry)
+    public ResponseEntity<LogEntry> patchLogEntry(@PathVariable Long logId, @RequestBody LogEntry partialLogEntry){
+        return logEntryService.patchLogEntry(logId, partialLogEntry)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
 
     @DeleteMapping("/logs/{logId}")
-    public ResponseEntity<Void> deleteLogEntryById(@PathVariable Long id){
-        if(logEntryService.deleteLogEntry(id)){
+    public ResponseEntity<Void> deleteLogEntryById(@PathVariable Long logId){
+        if(logEntryService.deleteLogEntry(logId)){
             ResponseEntity.noContent().build();
         }
         return ResponseEntity.notFound().build();

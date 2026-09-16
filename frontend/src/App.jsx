@@ -29,10 +29,7 @@ function App() {
     function handleChange(event) {
         const { name, value } = event.target;
 
-        setNewPet({
-            ...newPet,
-            [name]: value
-        });
+        setNewPet( {...newPet, [name]: value} );
     }
 
     function handleSubmit(event) {

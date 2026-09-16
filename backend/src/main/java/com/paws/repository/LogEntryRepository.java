@@ -17,14 +17,10 @@ import java.util.Optional;
 
 @Repository
 public class LogEntryRepository {
-    private JdbcTemplate db;
+    private final JdbcTemplate db;
 
     public LogEntryRepository(JdbcTemplate db){
         this.db = db;
-    }
-
-    public LogEntryRepository(){
-
     }
 
     public Optional<LogEntry> findById(Long id){
