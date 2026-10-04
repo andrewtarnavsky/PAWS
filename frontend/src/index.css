@@ -1,9 +1,10 @@
 :root {
-  --text: #6b6375;
+  --text: #1f2937;
   --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
+  --bg: #f3f4f6;
+  --border: #e5e7eb;
   --code-bg: #f4f3ec;
+  --card-bg: #ffffff;
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
@@ -32,17 +33,18 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
+    --bg: #111827;        /* A beautiful, deep dark grey/slate */
+    --card-bg: #1f2937;   /* Slightly lighter dark grey for your card/form */
+    --text: #f9fafb;        /* Crisp white/light grey text */
+    --border: #374151;    /* Muted dark border color */
     --text-h: #f3f4f6;
     --bg: #16171d;
-    --border: #2e303a;
     --code-bg: #1f2028;
     --accent: #c084fc;
     --accent-bg: rgba(192, 132, 252, 0.15);
     --accent-border: rgba(192, 132, 252, 0.5);
     --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+    --shadow: rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   }
 
   #social .button-icon {
@@ -109,3 +111,31 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+* {
+  box-sizing: border-box;
+}
+
+
+.pet-form {
+  background: var(--card-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;            /* Increased gap for beautiful layout breathing room */
+  width: 100%;
+  max-width: 440px;        /* Slightly wider for a standard premium card size */
+  margin: 0 auto;
+  padding: 2.5rem;
+  border-radius: 16px;     /* Smooth, modern rounded corners */
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 10px 15px -3px rgb(0 0 0 / 0.1); /* Soft shadow depth */
+  box-sizing: border-box;
+}
+
+.test-color-preview {
+  color: #ff0000;
+  background-color: blue;
+  border: 1px solid rgb(0, 255, 0);
+}
+
+
+

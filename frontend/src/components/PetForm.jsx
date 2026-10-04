@@ -29,7 +29,7 @@ function PetForm({onPetAdded}){
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className= "pet-form" onSubmit={handleSubmit}>
             <input
                 name="name"
                 placeholder="Pet name"
