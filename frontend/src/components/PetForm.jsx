@@ -18,6 +18,16 @@ function PetForm({onPetAdded}){
 
     function handleSubmit(event) {
         event.preventDefault();
+        if (newPet.name.trim().length === 0){
+            alert("Pet Name is missing!");
+            return;
+        }
+
+        if (newPet.species.trim().length === 0){
+            alert("Pet Species is missing!");
+            return;
+        }
+
         createPet(newPet)
             .then((savedPet) => {
                 // Notify the parent component to update the pets array
@@ -30,42 +40,60 @@ function PetForm({onPetAdded}){
 
     return (
         <form className= "pet-form" onSubmit={handleSubmit}>
-            <input
-                name="name"
-                placeholder="Pet name"
-                value={newPet.name}
-                onChange={handleChange}
-            />
+            <h2 className="pet-form-title">Register New Pet</h2>
+            <div className="pet-form-group">
+                <label className="pet-form-label">Pet Name*</label>
+                <input
+                    name="name"
+                    placeholder="Enter Pet Name"
+                    value={newPet.name}
+                    onChange={handleChange}
+                />
+            </div>
 
-            <input
-                name="species"
-                placeholder="Species"
-                value={newPet.species}
-                onChange={handleChange}
-            />
+            <div className="pet-form-group">
+                <label className="pet-form-label">Pet Species*</label>
+                <input
+                    name="species"
+                    placeholder="Enter Species"
+                    value={newPet.species}
+                    onChange={handleChange}
+                />
+            </div>
 
-            <input
-                name="breed"
-                placeholder="Breed"
-                value={newPet.breed}
-                onChange={handleChange}
-            />
+            <div className="pet-form-group">
+                <label className="pet-form-label">Pet Breed</label>
+                <input
+                    name="breed"
+                    placeholder="Enter Breed"
+                    value={newPet.breed}
+                    onChange={handleChange}
+                />
+            </div>
 
-            <input
-                name="age"
-                placeholder="Age"
-                value={newPet.age}
-                onChange={handleChange}
-            />
 
-            <input
-                name="weight"
-                placeholder="Weight"
-                value={newPet.weight}
-                onChange={handleChange}
-            />
+            <div className="pet-form-group">
+                <label className="pet-form-label">Pet Age</label>
+                <input
+                    name="age"
+                    placeholder="Enter Age"
+                    value={newPet.age}
+                    onChange={handleChange}
+                />
+            </div>
 
-            <button type="submit">Add Pet</button>
+
+            <div className="pet-form-group">
+                <label className="pet-form-label">Pet Weight</label>
+                <input
+                    name="weight"
+                    placeholder="Enter Weight"
+                    value={newPet.weight}
+                    onChange={handleChange}
+                />
+            </div>
+
+            <button className="pet-form-submit-btn" type="submit" style={{margin: 'auto'}}>Add Pet</button>
         </form>
     );
 }

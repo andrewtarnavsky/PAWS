@@ -11,7 +11,7 @@ function App() {
     fetch("http://localhost:8080/api/health")
         .then((response) => response.text())
         .then((data) => setBackendStatus(data))
-        .catch(() => setBackendStatus("Could not connect to backend"));
+        .catch(() => setBackendStatus("Not connected"));
   }, []);
 
   useEffect(() => {
@@ -26,18 +26,24 @@ function App() {
 
   return (
       <main style={{ padding: "2rem", fontFamily: "Arial, sans-serif" }}>
-        <h1>PAWS</h1>
-        <p>Pet Activity & Wellness System</p>
-        <h2>Backend Status</h2>
-        <p>{backendStatus}</p>
-        <PetForm onPetAdded={handlePetAdded} />
+            <div style={{position: 'absolute', top: '0px', left: '5px'}}>
+              <h2 style={{fontSize: '22px', margin: '0'}}>Backend Status</h2>
+              <p>{backendStatus}</p>
+            </div>
 
-        {pets.map((pet) => (
-          <div key={pet.id}>
-              <h2>{pet.name}</h2>
-              <p>{pet.species}</p>
-          </div>
-        ))}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px'}}>
+              <h1 style={{margin: '0'}}>PAWS</h1>
+              <p>Pet Activity & Wellness System</p>
+            </div>
+
+            <PetForm onPetAdded={handlePetAdded} />
+
+            {pets.map((pet) => (
+              <div key={pet.id}>
+                  <h2>{pet.name}</h2>
+                  <p>{pet.species}</p>
+              </div>
+            ))}
       </main>
   );
 }
