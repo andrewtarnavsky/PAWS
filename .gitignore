@@ -27,3 +27,4 @@ frontend/.vite/
 *.db
 data/*.db
 backend/data/*.db
+.DS_Store
