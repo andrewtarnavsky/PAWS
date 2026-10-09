@@ -10,7 +10,7 @@ function PetCard({pet}){
                 src = {getSpeciesImage(pet.species)}
                 alt= "Pet Icon"
             />
-            <h3 style={{margin: '0 auto'}}>{pet.name}</h3>
+            <h3 style={{margin: '5px auto', fontSize: '30px'}}>{pet.name}</h3>
             <p style={{fontSize: '16px'}}>{pet.breed}</p>
             <p className="pet-card-details">
                 {`Age: ${pet.age}   •   Weight: ${pet.weight} lbs`}
