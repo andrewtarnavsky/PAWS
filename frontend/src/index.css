@@ -193,6 +193,15 @@ code {
   transform: scale(1.1);
 }
 
+.pet-list-container {
+  width: min(100%, 1100px);
+  margin: 3rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+  gap: 2rem;
+  justify-content: center;
+}
+
 
 
 

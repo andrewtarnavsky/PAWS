@@ -13,7 +13,7 @@ function PetCard({pet}){
             <h3 style={{margin: '5px auto', fontSize: '30px'}}>{pet.name}</h3>
             <p style={{fontSize: '16px'}}>{pet.breed}</p>
             <p className="pet-card-details">
-                {`Age: ${pet.age}   •   Weight: ${pet.weight} lbs`}
+                {`Age: ${pet.age ?? "Unknown"}   •   Weight: ${pet.weight ? `${pet.weight} lbs`: "Unknown"} `}
             </p>
             <button className="pet-card-button">
                 View Profile
