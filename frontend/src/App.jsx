@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { getPets, createPet } from "./api/petsApi";
+import { getPets} from "./api/petsApi";
 import PetForm from "./components/PetForm.jsx";
-
+//import PetCard from "./components/PetCard.jsx";
+import PetList from "./components/PetList.jsx";
 
 function App() {
   const [backendStatus, setBackendStatus] = useState("Checking backend...");
@@ -26,9 +27,9 @@ function App() {
 
   return (
       <main style={{ padding: "2rem", fontFamily: "Arial, sans-serif" }}>
-            <div style={{position: 'absolute', top: '0px', left: '5px'}}>
-              <h2 style={{fontSize: '22px', margin: '0'}}>Backend Status</h2>
-              <p>{backendStatus}</p>
+            <div style={{position: 'absolute', top: '0px', left: '0px', fontSize: '13px', margin: '0 auto', lineHeight: '1', width: '150px'}}>
+              <p style={{margin: '0'}}>Backend Status</p>
+              <p style={{margin: 0, padding: 0}}>{backendStatus}</p>
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px'}}>
@@ -36,14 +37,9 @@ function App() {
               <p>Pet Activity & Wellness System</p>
             </div>
 
+            <PetList pets = {pets}/>
             <PetForm onPetAdded={handlePetAdded} />
 
-            {pets.map((pet) => (
-              <div key={pet.id}>
-                  <h2>{pet.name}</h2>
-                  <p>{pet.species}</p>
-              </div>
-            ))}
       </main>
   );
 }
