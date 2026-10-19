@@ -37,7 +37,64 @@ function App() {
               <p>Pet Activity & Wellness System</p>
             </div>
 
-            <PetList pets = {pets}/>
+            <PetList pets = { [
+                {
+                    id: 1,
+                    name: "Buddy",
+                    species: "Dog",
+                    breed: "Golden Retriever",
+                    age: "2",
+                    weight: "70"
+                },
+                {
+                    id: 2,
+                    name: "Luna",
+                    species: "Cat",
+                    breed: "Siamese",
+                    age: "1",
+                    weight: "10"
+                },
+                {
+                    id: 3,
+                    name: "Milo",
+                    species: "Dog",
+                    breed: "French Bulldog",
+                    age: "3",
+                    weight: "25"
+                },
+                {
+                    id: 4,
+                    name: "Bella",
+                    species: "Bird",
+                    breed: "Maine Coon",
+                    age: "5",
+                    weight: "18"
+                },
+                {
+                    id: 5,
+                    name: "Charlie",
+                    species: "Rabbit",
+                    breed: "Beagle",
+                    age: "4",
+                    weight: "30"
+                },
+                {
+                    id: 6,
+                    name: "Oliver",
+                    species: "Cat",
+                    breed: "Tabby",
+                    age: "1",
+                    weight: "11"
+                },
+                {
+                    id: 7,
+                    name: "Rocky",
+                    species: "Dog",
+                    breed: "German Shepherd",
+                    age: "6",
+                    weight: "85"
+                }
+            ]}/>
             <PetForm onPetAdded={handlePetAdded} />
 
       </main>
